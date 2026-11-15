@@ -2,19 +2,19 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-15 13:45 UTC**.
+Latest completed candle ended **2026-11-15 14:00 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
-| $201.07 | 1 | 0 |
+| $200.96 | 1 | 0 |
 
 | Market | Last close | Trend strategy |
 |---|---:|---|
-| BTC/USD | $65,463.80 | Waiting for signal |
-| ETH/USD | $1,832.08 | In position |
+| BTC/USD | $65,398.50 | Waiting for signal |
+| ETH/USD | $1,830.01 | In position |
 
 Started with $200 simulated USD. Entries and exits are modeled from candles. No broker orders.
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-15 13:55 UTC** · Target interval: 5 minutes.
+Last successful market check: **2026-11-15 14:00 UTC** · Target interval: 5 minutes.
