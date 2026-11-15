@@ -12,6 +12,8 @@ from exchange import normalize
 from risk_manager import new_account
 from strategies import prepare
 
+from scorecard import NAMES as STRATEGIES, report, tick
+
 ROOT = Path(sys.argv[1])
 CONFIG = load(sys.argv[2])
 CONFIG.update(venue="kraken", symbols={"BTC/USD": 0.00001, "ETH/USD": 0.0001})
@@ -31,7 +33,41 @@ def market_frame(symbol, now):
     d = normalize(d)
     if not STEP <= now - d.index[-1] < 2*STEP:
         raise RuntimeError("Feed stale or ahead of clock")
-    return prepare(d, CONFIG)
+    return strategy_frame(d)
+
+
+def strategy_frame(d):
+    base = None
+    for name in STRATEGIES:
+        signals = prepare(d, dict(CONFIG, strategy=name))
+        if base is None:
+            base = signals.copy()
+        for side in ("enter", "exit"):
+            base[f"{name}_{side}"] = signals[side]
+    return base
+
+
+def candidates(frames, t):
+    return {symbol: [name for name in STRATEGIES if frame.at[t, f"{name}_enter"]]
+            for symbol, frame in frames.items()}
+
+
+def step_portfolio(account, frames, previous, t, saved):
+    owners = {s: p["strategy"] for s, p in account["positions"].items()}
+    for symbol, frame in frames.items():
+        signals = saved.get(symbol, [])
+        frame.at[previous, "enter"] = bool(signals)
+        if signals and symbol not in owners:
+            owners[symbol] = signals[0]
+        owner = owners.get(symbol)
+        frame.at[previous, "exit"] = bool(owner and frame.at[previous, f"{owner}_exit"])
+
+    opened, closed = advance(CONFIG, account, frames, t, allow_entries=bool(saved))
+    for record in opened + closed:
+        record["strategy"] = owners[record["symbol"]]
+    for symbol, position in account["positions"].items():
+        position["strategy"] = owners[symbol]
+    return opened, closed
 
 
 def main():
@@ -51,20 +87,24 @@ def main():
         if not times.isin(d.index).all():
             raise RuntimeError("Missing candles. Preserve account and restore history.")
     events = []
-    # Act only on a signal previously observed and saved by this runner.
-    # Other elapsed bars can close existing positions but cannot open new ones.
+    for position in a["positions"].values():
+        position.setdefault("strategy", "trend")
+    saved = a.get("strategy_signals")
+    if saved is None:
+        # Before migration only trend signals had actually been observed.
+        saved = {s: ["trend"] if v else [] for s, v in a.get("signals", {}).items()}
     for t in times[1:]:
-        eligible = t == cursor + STEP
-        if eligible:
-            for s, d in frames.items():
-                d.at[cursor,"enter"] = a["signals"][s]
-        opened, closed = advance(CONFIG, a, frames, t, allow_entries=eligible)
-        for kind, records in (("open",opened),("close",closed)):
-            events.extend(dict(kind=kind,time=str(t),**r) for r in records)
-    if a["cursor"] is None or latest > cursor:
-        a["signals"] = {s:bool(d.at[latest,"enter"]) for s,d in frames.items()}
+        opened, closed = step_portfolio(a, frames, t - STEP, t, saved)
+        saved = {}  # Missed polling intervals may close a position but cannot open one.
+        for kind, records in (("open", opened), ("close", closed)):
+            events.extend(dict(kind=kind, time=str(t), **r) for r in records)
+    if a["cursor"] is None or latest > cursor or "strategy_signals" not in a:
+        a["strategy_signals"] = candidates(frames, latest)
+    a["signals"] = {s: "trend" in names for s, names in a["strategy_signals"].items()}
     a["cursor"] = str(latest)
     a["closed"] = a.get("closed",0) + sum(e["kind"]=="close" for e in events)
+    trials = a.setdefault("strategy_trials", {})
+    tick(trials, CONFIG, frames, latest, now)
     path.write_text(json.dumps(a,indent=2,allow_nan=False)+"\n")
     with (ROOT / "events.jsonl").open("a") as f:
         for event in events:
@@ -74,10 +114,21 @@ def main():
              "", f"Latest completed candle ended **{latest+STEP:%Y-%m-%d %H:%M} UTC**.",
              "", "| Paper equity | Open positions | Closed trades |",
              "|---:|---:|---:|", f"| ${a['equity']:,.2f} | {len(a['positions'])} | {a['closed']} |",
-             "", "| Market | Last close | Trend strategy |", "|---|---:|---|"]
-    for s,d in frames.items():
-        signal = "In position" if s in a["positions"] else "Entry signal" if a["signals"][s] else "Waiting for signal"
-        lines.append(f"| {s} | ${d.at[latest,'close']:,.2f} | {signal} |")
+             "", "| Market | Last close | Trend | Mean reversion | Breakout | Momentum |",
+             "|---|---:|---|---|---|---|"]
+    for symbol, frame in frames.items():
+        position = a["positions"].get(symbol, {})
+        statuses = []
+        for name in STRATEGIES:
+            if position.get("strategy") == name:
+                status = "In position"
+            elif name in a["strategy_signals"][symbol]:
+                status = "Entry signal"
+            else:
+                status = "Waiting"
+            statuses.append(status)
+        lines.append(f"| {symbol} | ${frame.at[latest,'close']:,.2f} | " + " | ".join(statuses) + " |")
+    lines += report(trials, CONFIG["equity"])
     lines += ["", "Started with $200 simulated USD. Entries and exits are modeled from candles. No broker orders.",
               "", "[Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)"]
     (ROOT/"README.md").write_text("\n".join(lines)+"\n")
