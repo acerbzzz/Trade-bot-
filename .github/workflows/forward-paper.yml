@@ -1,0 +1,50 @@
+name: Forward paper desk
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2,17,32,47 * * * *'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/forward-paper.yml', 'scripts/forward.py']
+permissions:
+  contents: write
+concurrency:
+  group: crypto-forward-paper
+  cancel-in-progress: false
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Load paper framework
+        run: |
+          unzip -q MultiMarket_Trading_Bot.zip -d "$RUNNER_TEMP/framework"
+          python -m pip install -r "$RUNNER_TEMP/framework/trading_bot/requirements.txt"
+      - name: Restore portfolio
+        run: |
+          dest="$RUNNER_TEMP/portfolio"
+          refs=$(git ls-remote --heads origin refs/heads/paper-status)
+          if [ -n "$refs" ]; then
+            git fetch origin refs/heads/paper-status
+            git worktree add --detach "$dest" FETCH_HEAD
+            test -s "$dest/account.json"
+          else
+            git worktree add --detach "$dest" HEAD
+            git -C "$dest" switch --orphan paper-status
+          fi
+      - name: Update simulated account and dashboard
+        run: |
+          dest="$RUNNER_TEMP/portfolio"
+          export PYTHONPATH="$RUNNER_TEMP/framework/trading_bot"
+          python scripts/forward.py "$dest" "$PYTHONPATH/configs/crypto.yml"
+          git -C "$dest" add account.json events.jsonl README.md
+          if ! git -C "$dest" diff --cached --quiet; then
+            git -C "$dest" -c user.name=paper-desk -c user.email=paper-desk@users.noreply.github.com commit -m "Update paper portfolio"
+            git -C "$dest" push origin HEAD:refs/heads/paper-status
+          fi
+          cat "$dest/README.md" >> "$GITHUB_STEP_SUMMARY"
