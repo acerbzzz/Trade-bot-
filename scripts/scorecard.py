@@ -1,12 +1,30 @@
 """Independent paper replays, one strategy per worker minute."""
+import json
+import subprocess
+from pathlib import Path
+
 import pandas as pd
 
 from engine import advance
 from risk_manager import new_account
 
 DESK_NAMES = ("trend", "reversion", "breakout", "momentum")
-NAMES = DESK_NAMES + ("relative_strength", "vwap_pullback", "failed_breakdown")
+GROK_TRIALS = ("grok_pullback", "grok_squeeze", "grok_supertrend", "grok_stochastic", "grok_confluence")
+NAMES = DESK_NAMES + ("relative_strength", "vwap_pullback", "failed_breakdown") + GROK_TRIALS
 BAR = pd.Timedelta(minutes=15)
+
+
+def grok_signals(name, frames, atr_period):
+    books = {}
+    for symbol, frame in frames.items():
+        bars = frame[["open", "high", "low", "close", "volume"]].copy()
+        bars["t"] = [int(t.timestamp()) * 1000 for t in frame.index]
+        books[symbol] = bars.to_dict("records")
+    script = Path(__file__).resolve().parents[1] / "research/grok/signals.mjs"
+    payload = dict(strategy=name.removeprefix("grok_"), books=books, atrPeriod=atr_period)
+    result = subprocess.run(["node", str(script)], input=json.dumps(payload, allow_nan=False),
+                            capture_output=True, text=True, check=True, timeout=15)
+    return json.loads(result.stdout)
 
 
 def trial_step(name, config, account, frames, t):
@@ -48,11 +66,15 @@ def tick(state, config, frames, latest, now):
     if latest < cursor:
         raise ValueError("Scorecard feed moved backward")
     times = pd.date_range(cursor, latest, freq=BAR)
+    extra = grok_signals(name, frames, config["atr_period"]) if name in GROK_TRIALS else {}
     views = {}
     for symbol, frame in frames.items():
         if not times.isin(frame.index).all() or frame.index.get_loc(cursor) < config["history"]:
             raise ValueError("Insufficient continuous history for scorecard")
-        views[symbol] = frame.assign(enter=frame[name + "_enter"], exit=frame[name + "_exit"])
+        if symbol in extra:
+            views[symbol] = frame.assign(**extra[symbol])
+        else:
+            views[symbol] = frame.assign(enter=frame[name + "_enter"], exit=frame[name + "_exit"])
     for t in times[1:]:
         _, closed = trial_step(name, config, account, views, t)
         card["closed"] += len(closed)
