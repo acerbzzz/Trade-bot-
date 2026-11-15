@@ -97,7 +97,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-15 19:00:00+00:00"
+          "cursor": "2026-11-15 19:15:00+00:00"
         },
         "closed": 5
       },
@@ -290,8 +290,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 1,
-    "minute": "2026-11-15 19:34:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-15 19:35:00+00:00",
     "finalists": [
       "momentum",
       "grok_supertrend"
