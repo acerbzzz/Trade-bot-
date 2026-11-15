@@ -3,11 +3,11 @@
   "equity": 200,
   "peak": 200,
   "day_start": 200,
-  "day": "",
+  "day": "2026-11-15",
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-15 04:00:00+00:00",
+  "cursor": "2026-11-15 04:30:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",

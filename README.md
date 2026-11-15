@@ -2,7 +2,7 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-15 04:15 UTC**.
+Latest completed candle ended **2026-11-15 04:45 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
@@ -10,8 +10,8 @@ Latest completed candle ended **2026-11-15 04:15 UTC**.
 
 | Market | Last close | Trend strategy |
 |---|---:|---|
-| BTC/USD | $64,875.10 | Waiting for signal |
-| ETH/USD | $1,819.57 | Waiting for signal |
+| BTC/USD | $64,798.40 | Waiting for signal |
+| ETH/USD | $1,814.65 | Waiting for signal |
 
 Started with $200 simulated USD. Entries and exits are modeled from candles. No broker orders.
 
