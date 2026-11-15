@@ -1,13 +1,22 @@
 {
   "balance": 200,
-  "equity": 200,
-  "peak": 200,
+  "equity": 201.353627874134,
+  "peak": 201.353627874134,
   "day_start": 200,
   "day": "2026-11-15",
   "halted": false,
   "day_halt": false,
-  "positions": {},
-  "cursor": "2026-11-15 08:45:00+00:00",
+  "positions": {
+    "ETH/USD": {
+      "entry": 1810.74306,
+      "qty": 0.0522,
+      "stop": 1784.3712737172277,
+      "target": 1884.3515752577662,
+      "capital": 94.520787732,
+      "opened": "2026-11-15 09:00:00+00:00"
+    }
+  },
+  "cursor": "2026-11-15 09:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -53,7 +62,7 @@
   },
   "signals": {
     "BTC/USD": false,
-    "ETH/USD": true
+    "ETH/USD": false
   },
   "closed": 0
 }
