@@ -12,7 +12,8 @@ from exchange import normalize
 from risk_manager import new_account
 from strategies import prepare
 
-from scorecard import NAMES as STRATEGIES, report, tick
+from scorecard import DESK_NAMES as STRATEGIES, report, tick
+from trial_signals import add_signals
 
 ROOT = Path(sys.argv[1])
 CONFIG = load(sys.argv[2])
@@ -30,7 +31,9 @@ def market_frame(symbol, now):
     # Kraken's trailing record is provisional.
     d = pd.DataFrame(rows[:-1], columns="timestamp open high low close vwap volume count".split())
     d["timestamp"] = pd.to_datetime(d.timestamp, unit="s", utc=True)
+    bar_vwap = pd.Series(d.vwap.astype(float).to_numpy(), index=d.timestamp)
     d = normalize(d)
+    d["bar_vwap"] = bar_vwap.reindex(d.index)
     if not STEP <= now - d.index[-1] < 2*STEP:
         raise RuntimeError("Feed stale or ahead of clock")
     return strategy_frame(d)
@@ -73,6 +76,7 @@ def step_portfolio(account, frames, previous, t, saved):
 def main():
     now = pd.Timestamp.now(tz="UTC")
     frames = {s: market_frame(s, now) for s in CONFIG["symbols"]}
+    add_signals(frames)
     latest, = {d.index[-1] for d in frames.values()}
     path = ROOT / "account.json"
     a = json.loads(path.read_text()) if path.exists() else new_account(CONFIG)
