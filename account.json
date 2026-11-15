@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-15 18:15:00+00:00",
+  "cursor": "2026-11-15 18:30:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -230,9 +230,29 @@
         },
         "closed": 0,
         "start": "2026-11-14 14:45:00+00:00"
+      },
+      "grok_confluence": {
+        "account": {
+          "balance": 199.41362274024362,
+          "equity": 199.41362274024362,
+          "peak": 200.6114548230804,
+          "day_start": 200,
+          "day": "2026-11-15",
+          "halted": false,
+          "day_halt": false,
+          "positions": {},
+          "cursor": "2026-11-15 18:30:00+00:00"
+        },
+        "closed": 2,
+        "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 11,
-    "minute": "2026-11-15 18:44:00+00:00"
+    "turn": 0,
+    "minute": "2026-11-15 18:45:00+00:00",
+    "finalists": [
+      "momentum",
+      "grok_supertrend"
+    ],
+    "validation_start": "2026-11-15 18:30:00+00:00"
   }
 }

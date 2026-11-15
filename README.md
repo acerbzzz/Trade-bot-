@@ -2,7 +2,7 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-15 18:30 UTC**.
+Latest completed candle ended **2026-11-15 18:45 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
@@ -10,8 +10,8 @@ Latest completed candle ended **2026-11-15 18:30 UTC**.
 
 | Market | Last close | Trend | Mean reversion | Breakout | Momentum |
 |---|---:|---|---|---|---|
-| BTC/USD | $64,501.70 | Waiting | Waiting | Waiting | Waiting |
-| ETH/USD | $1,810.80 | Waiting | Waiting | Waiting | Waiting |
+| BTC/USD | $64,586.60 | Waiting | Waiting | Waiting | Waiting |
+| ETH/USD | $1,813.55 | Waiting | Waiting | Waiting | Waiting |
 
 ## Strategy trials
 
@@ -30,7 +30,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | grok_squeeze | 0 | $+0.00 | Pending | — |
 | grok_supertrend | 1 | $+0.04 | Yes | — |
 | grok_stochastic | 0 | $+0.00 | Pending | — |
-| grok_confluence | — | — | Awaiting first test | — |
+| grok_confluence | 2 | $-0.59 | Pending | — |
 
 Relative strength trial equity: $200.00. 50/50 BTC–ETH buy-and-hold liquidation value: $195.37.
 
@@ -38,4 +38,4 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-15 18:44 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-15 18:45 UTC** · Target interval: 1 minute.
