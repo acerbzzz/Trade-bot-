@@ -26,7 +26,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | relative_strength | 0 | $+0.00 | Pending | — |
 | vwap_pullback | 0 | $+0.00 | Pending | — |
 | failed_breakdown | 6 | $-0.60 | Pending | — |
-| grok_pullback | — | — | Awaiting first test | — |
+| grok_pullback | 2 | $-2.05 | Pending | — |
 | grok_squeeze | — | — | Awaiting first test | — |
 | grok_supertrend | — | — | Awaiting first test | — |
 | grok_stochastic | — | — | Awaiting first test | — |
@@ -38,4 +38,4 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-15 18:40 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-15 18:41 UTC** · Target interval: 1 minute.
