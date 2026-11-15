@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-15 15:45:00+00:00",
+  "cursor": "2026-11-15 16:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -87,7 +87,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-15 15:45:00+00:00"
+          "cursor": "2026-11-15 16:00:00+00:00"
         },
         "closed": 5
       },
@@ -171,7 +171,7 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 1,
-    "minute": "2026-11-15 16:14:00+00:00"
+    "turn": 2,
+    "minute": "2026-11-15 16:15:00+00:00"
   }
 }
