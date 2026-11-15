@@ -2,7 +2,7 @@ name: Forward paper desk
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2,17,32,47 * * * *'
+    - cron: '2-59/5 * * * *'
   push:
     branches: [main]
     paths: ['.github/workflows/forward-paper.yml', 'scripts/forward.py']
@@ -15,7 +15,7 @@ jobs:
   update:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 105
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -41,10 +41,28 @@ jobs:
         run: |
           dest="$RUNNER_TEMP/portfolio"
           export PYTHONPATH="$RUNNER_TEMP/framework/trading_bot"
-          python scripts/forward.py "$dest" "$PYTHONPATH/configs/crypto.yml"
-          git -C "$dest" add account.json events.jsonl README.md
-          if ! git -C "$dest" diff --cached --quiet; then
-            git -C "$dest" -c user.name=paper-desk -c user.email=paper-desk@users.noreply.github.com commit -m "Update paper portfolio"
-            git -C "$dest" push origin HEAD:refs/heads/paper-status
-          fi
-          cat "$dest/README.md" >> "$GITHUB_STEP_SUMMARY"
+          # A manual or recovery launch keeps polling if GitHub delays cron.
+          # A scheduled launch processes one check and releases the runner.
+          deadline=$((SECONDS + 5400))
+          while true; do
+            if python scripts/forward.py "$dest" "$PYTHONPATH/configs/crypto.yml"; then
+              checked=$(date -u '+%Y-%m-%d %H:%M UTC')
+              printf '\nLast successful market check: **%s** · Target interval: 5 minutes.\n' "$checked" >> "$dest/README.md"
+              git -C "$dest" add account.json events.jsonl README.md
+              if ! git -C "$dest" diff --cached --quiet; then
+                git -C "$dest" -c user.name=paper-desk -c user.email=paper-desk@users.noreply.github.com commit -m "Paper desk check at $checked"
+                git -C "$dest" push origin HEAD:refs/heads/paper-status
+              fi
+              echo "Market check succeeded at $checked" >> "$GITHUB_STEP_SUMMARY"
+            else
+              # Discard an incomplete local update before retrying.
+              git -C "$dest" restore --source=HEAD -- . || exit 1
+              echo "::warning::Paper market check failed; published portfolio preserved."
+              if [ "$GITHUB_EVENT_NAME" = schedule ]; then exit 1; fi
+            fi
+            if [ "$GITHUB_EVENT_NAME" = schedule ]; then break; fi
+            now=$(date +%s)
+            delay=$((300 - (now - 20) % 300))
+            if (( SECONDS + delay >= deadline )); then break; fi
+            sleep "$delay"
+          done
