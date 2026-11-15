@@ -8,6 +8,7 @@ on:
     paths: ['.github/workflows/forward-paper.yml', 'scripts/forward.py']
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: crypto-forward-paper
   cancel-in-progress: false
@@ -66,3 +67,16 @@ jobs:
             if (( SECONDS + delay >= deadline )); then break; fi
             sleep "$delay"
           done
+      - name: Hand off to the next paper worker
+        if: success() && github.event_name != 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Let an updated workflow or a waiting schedule take over first.
+          current=$(gh api "repos/$GITHUB_REPOSITORY/branches/main" --jq '.commit.sha')
+          if [ "$current" != "$GITHUB_SHA" ]; then exit 0; fi
+          waiting=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/forward-paper.yml/runs?branch=main&per_page=100" \
+            --jq '[.workflow_runs[] | select(.status == "queued" or .status == "pending" or .status == "waiting")] | length')
+          if [ "$waiting" = 0 ]; then
+            gh workflow run forward-paper.yml --ref main
+          fi
