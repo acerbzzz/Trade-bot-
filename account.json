@@ -1,0 +1,59 @@
+{
+  "balance": 200,
+  "equity": 200,
+  "peak": 200,
+  "day_start": 200,
+  "day": "",
+  "halted": false,
+  "day_halt": false,
+  "positions": {},
+  "cursor": "2026-11-15 04:00:00+00:00",
+  "settings": {
+    "mode": "paper",
+    "strategy": "trend",
+    "equity": 200,
+    "timeframe": "15m",
+    "risk": 0.0075,
+    "reward": 2.5,
+    "atr_period": 14,
+    "atr_stop": 2,
+    "max_positions": 2,
+    "daily_loss": 0.03,
+    "drawdown": 0.1,
+    "correlation": 0.8,
+    "corr_window": 40,
+    "fee_bps": 5,
+    "slip_bps": 3,
+    "history": 300,
+    "poll_seconds": 30,
+    "holdout": 0.3,
+    "notify": false,
+    "params": {
+      "fast": 12,
+      "slow": 26,
+      "adx": 14,
+      "strength": 20,
+      "bands": 20,
+      "deviations": 2,
+      "rsi": 14,
+      "oversold": 30,
+      "recovery": 50,
+      "channel": 20,
+      "volume_ratio": 1.2,
+      "breakout_atr": 0.1,
+      "signal": 9,
+      "momentum": 55
+    },
+    "market": "crypto",
+    "venue": "kraken",
+    "symbols": {
+      "BTC/USD": 1e-05,
+      "ETH/USD": 0.0001
+    }
+  },
+  "signals": {
+    "BTC/USD": false,
+    "ETH/USD": false
+  },
+  "closed": 0
+}
