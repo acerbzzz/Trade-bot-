@@ -215,9 +215,24 @@
         "closed": 1,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-15 18:15:00+00:00"
+      },
+      "grok_stochastic": {
+        "account": {
+          "balance": 200,
+          "equity": 200,
+          "peak": 200,
+          "day_start": 200,
+          "day": "2026-11-15",
+          "halted": false,
+          "day_halt": false,
+          "positions": {},
+          "cursor": "2026-11-15 18:15:00+00:00"
+        },
+        "closed": 0,
+        "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 10,
-    "minute": "2026-11-15 18:43:00+00:00"
+    "turn": 11,
+    "minute": "2026-11-15 18:44:00+00:00"
   }
 }
