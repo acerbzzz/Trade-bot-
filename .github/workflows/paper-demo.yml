@@ -1,0 +1,35 @@
+name: Paper demo
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - MultiMarket_Trading_Bot.zip
+      - .github/workflows/paper-demo.yml
+permissions:
+  contents: read
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract framework
+        run: unzip -q MultiMarket_Trading_Bot.zip -d "$RUNNER_TEMP/framework"
+      - name: Run tests and synthetic paper demo
+        run: |
+          cd "$RUNNER_TEMP/framework/trading_bot"
+          python -m pip install -r requirements.txt
+          python -m unittest discover -s tests -v
+          python backtester.py --demo --config configs/crypto.yml --out "$GITHUB_WORKSPACE/results"
+          echo '### $200 paper demo · synthetic data' >> "$GITHUB_STEP_SUMMARY"
+          echo '~~~json' >> "$GITHUB_STEP_SUMMARY"
+          cat "$GITHUB_WORKSPACE/results/metrics.json" >> "$GITHUB_STEP_SUMMARY"
+          echo >> "$GITHUB_STEP_SUMMARY"
+          echo '~~~' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paper-demo-results
+          path: results/
