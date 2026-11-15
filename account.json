@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-15 08:30:00+00:00",
+  "cursor": "2026-11-15 08:45:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -53,7 +53,7 @@
   },
   "signals": {
     "BTC/USD": false,
-    "ETH/USD": false
+    "ETH/USD": true
   },
   "closed": 0
 }
