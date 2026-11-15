@@ -26,6 +26,11 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | relative_strength | 0 | $+0.00 | Pending | — |
 | vwap_pullback | 0 | $+0.00 | Pending | — |
 | failed_breakdown | 6 | $-0.60 | Pending | — |
+| grok_pullback | — | — | Awaiting first test | — |
+| grok_squeeze | — | — | Awaiting first test | — |
+| grok_supertrend | — | — | Awaiting first test | — |
+| grok_stochastic | — | — | Awaiting first test | — |
+| grok_confluence | — | — | Awaiting first test | — |
 
 Relative strength trial equity: $200.00. 50/50 BTC–ETH buy-and-hold liquidation value: $195.37.
 
