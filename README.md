@@ -25,7 +25,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | momentum | 1 | $+0.06 | Yes | — |
 | relative_strength | 0 | $+0.00 | Pending | — |
 | vwap_pullback | 0 | $+0.00 | Pending | — |
-| failed_breakdown | — | — | Awaiting first test | — |
+| failed_breakdown | 6 | $-0.60 | Pending | — |
 
 Relative strength trial equity: $200.00. 50/50 BTC–ETH buy-and-hold liquidation value: $195.39.
 
@@ -33,4 +33,4 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-15 15:37 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-15 15:38 UTC** · Target interval: 1 minute.
