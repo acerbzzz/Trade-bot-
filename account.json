@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-16 11:30:00+00:00",
+  "cursor": "2026-11-16 21:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -224,31 +224,32 @@
       },
       "grok_supertrend": {
         "account": {
-          "balance": 200.0414413599236,
-          "equity": 200.0414413599236,
-          "peak": 201.4343901424372,
-          "day_start": 200,
-          "day": "2026-11-15",
+          "balance": 198.91093010891532,
+          "equity": 198.91093010891532,
+          "peak": 201.87601994039022,
+          "day_start": 200.0414413599236,
+          "day": "2026-11-16",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-15 23:30:00+00:00"
+          "cursor": "2026-11-16 21:00:00+00:00"
         },
-        "closed": 1,
+        "closed": 2,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-15 18:15:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 200,
-          "peak": 200,
+          "balance": 198.87110146119002,
+          "equity": 198.87110146119002,
+          "peak": 201.83196149262002,
           "day_start": 200,
-          "day": "2026-11-15",
+          "day": "2026-11-16",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-15 23:30:00+00:00"
+          "cursor": "2026-11-16 21:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1,
+        "validation_pnl": -1.1288985388099775
       },
       "grok_stochastic": {
         "account": {
@@ -281,8 +282,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 9,
-    "minute": "2026-11-16 11:52:00+00:00",
+    "turn": 10,
+    "minute": "2026-11-16 21:15:00+00:00",
     "finalists": [
       "momentum",
       "grok_supertrend"
