@@ -154,17 +154,17 @@
       },
       "vwap_pullback": {
         "account": {
-          "balance": 200,
-          "equity": 200,
-          "peak": 200,
+          "balance": 199.285705780184,
+          "equity": 199.285705780184,
+          "peak": 200.130791134016,
           "day_start": 200,
-          "day": "2026-11-15",
+          "day": "2026-11-16",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-15 23:30:00+00:00"
+          "cursor": "2026-11-16 11:30:00+00:00"
         },
-        "closed": 0,
+        "closed": 1,
         "start": "2026-11-14 14:45:00+00:00"
       },
       "failed_breakdown": {
@@ -271,8 +271,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 5,
-    "minute": "2026-11-16 11:48:00+00:00",
+    "turn": 6,
+    "minute": "2026-11-16 11:49:00+00:00",
     "finalists": [
       "momentum",
       "grok_supertrend"
