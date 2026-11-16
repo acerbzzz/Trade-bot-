@@ -209,17 +209,17 @@
       },
       "grok_squeeze": {
         "account": {
-          "balance": 199.4310380233216,
-          "equity": 199.4310380233216,
+          "balance": 198.28905380752803,
+          "equity": 198.28905380752803,
           "peak": 200.1214139530808,
-          "day_start": 200,
-          "day": "2026-11-15",
+          "day_start": 199.26482307581762,
+          "day": "2026-11-16",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-15 23:30:00+00:00"
+          "cursor": "2026-11-16 11:30:00+00:00"
         },
-        "closed": 1,
+        "closed": 2,
         "start": "2026-11-14 14:45:00+00:00"
       },
       "grok_supertrend": {
@@ -281,8 +281,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 8,
-    "minute": "2026-11-16 11:51:00+00:00",
+    "turn": 9,
+    "minute": "2026-11-16 11:52:00+00:00",
     "finalists": [
       "momentum",
       "grok_supertrend"
