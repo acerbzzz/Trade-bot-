@@ -93,17 +93,17 @@
       },
       "breakout": {
         "account": {
-          "balance": 199.50826697845162,
-          "equity": 199.50826697845162,
-          "peak": 200.6114548230804,
+          "balance": 198.38098115183993,
+          "equity": 198.38098115183993,
+          "peak": 201.33761138322504,
           "day_start": 199.50826697845162,
           "day": "2026-11-16",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-16 03:00:00+00:00"
+          "cursor": "2026-11-16 21:00:00+00:00"
         },
-        "closed": 2
+        "closed": 3
       },
       "momentum": {
         "account": {
@@ -282,8 +282,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 2,
-    "minute": "2026-11-16 21:19:00+00:00",
+    "turn": 3,
+    "minute": "2026-11-16 21:20:00+00:00",
     "finalists": [
       "momentum",
       "grok_supertrend"
