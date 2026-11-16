@@ -30,7 +30,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | grok_squeeze | 2 | $-1.71 | Pending | — |
 | grok_supertrend | 2 | $-1.09 | Yes | — |
 | grok_stochastic | 1 | $-0.18 | Pending | — |
-| grok_confluence | 2 | $-0.59 | Pending | — |
+| grok_confluence | 3 | $-1.71 | Pending | — |
 
 Relative strength trial equity: $198.50. 50/50 BTC–ETH buy-and-hold liquidation value: $195.23.
 
@@ -38,4 +38,4 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-16 21:16 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-16 21:17 UTC** · Target interval: 1 minute.
