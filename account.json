@@ -93,17 +93,17 @@
       },
       "breakout": {
         "account": {
-          "balance": 198.38098115183993,
-          "equity": 198.38098115183993,
+          "balance": 197.19348565626785,
+          "equity": 197.19348565626785,
           "peak": 201.33761138322504,
-          "day_start": 199.50826697845162,
-          "day": "2026-11-16",
+          "day_start": 197.19348565626785,
+          "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-16 21:00:00+00:00"
+          "cursor": "2026-11-17 00:30:00+00:00"
         },
-        "closed": 3
+        "closed": 4
       },
       "momentum": {
         "account": {
@@ -248,8 +248,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 2,
-    "minute": "2026-11-17 00:58:00+00:00",
+    "turn": 3,
+    "minute": "2026-11-17 00:59:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
