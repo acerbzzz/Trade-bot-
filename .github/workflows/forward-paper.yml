@@ -45,13 +45,16 @@ jobs:
         run: |
           dest="$RUNNER_TEMP/portfolio"
           export PYTHONPATH="$RUNNER_TEMP/framework/trading_bot"
-          # A manual or recovery launch keeps polling if GitHub delays cron.
-          # Scheduled jobs cover the minute ticks between five-minute triggers.
+          restored=$(git -C "$dest" rev-parse HEAD)
+          started=$(date -u '+%Y-%m-%d %H:%M UTC')
+          # Every trigger owns the same bounded session, including cron recovery.
           deadline=$((SECONDS + 5400))
           while true; do
             if python scripts/forward.py "$dest" "$PYTHONPATH/configs/crypto.yml"; then
               checked=$(date -u '+%Y-%m-%d %H:%M UTC')
               printf '\nLast successful market check: **%s** · Target interval: 1 minute.\n' "$checked" >> "$dest/README.md"
+              printf 'Worker started: **%s** · [Worker run](%s/%s/actions/runs/%s) · [Restored checkpoint](%s/%s/commit/%s)\n' "$started" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$restored" >> "$dest/README.md"
+              printf '\n[Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)\n' >> "$dest/README.md"
               git -C "$dest" add account.json events.jsonl README.md
               if ! git -C "$dest" diff --cached --quiet; then
                 git -C "$dest" -c user.name=paper-desk -c user.email=paper-desk@users.noreply.github.com commit -m "Paper desk check at $checked"
@@ -62,16 +65,14 @@ jobs:
               # Discard an incomplete local update before retrying.
               git -C "$dest" restore --source=HEAD -- . || exit 1
               echo "::warning::Paper market check failed; published portfolio preserved."
-              if [ "$GITHUB_EVENT_NAME" = schedule ]; then exit 1; fi
             fi
-            if [ "$GITHUB_EVENT_NAME" = schedule ] && (( SECONDS >= 240 )); then break; fi
             now=$(date +%s)
             delay=$((60 - (now - 20) % 60))
             if (( SECONDS + delay >= deadline )); then break; fi
             sleep "$delay"
           done
       - name: Hand off to the next paper worker
-        if: success() && github.event_name != 'schedule'
+        if: success()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
