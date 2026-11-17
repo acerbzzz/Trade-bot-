@@ -118,20 +118,7 @@
           "cursor": "2026-11-17 00:30:00+00:00"
         },
         "closed": 4,
-        "qualified": "2026-11-15 14:45:00+00:00",
-        "validation": {
-          "balance": 198.37136643591907,
-          "equity": 198.37136643591907,
-          "peak": 200,
-          "day_start": 198.37136643591907,
-          "day": "2026-11-17",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-17 00:30:00+00:00"
-        },
-        "validation_closed": 3,
-        "validation_pnl": -1.7034411878809408
+        "qualified": "2026-11-15 14:45:00+00:00"
       },
       "relative_strength": {
         "account": {
@@ -228,20 +215,7 @@
         },
         "closed": 2,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-15 18:15:00+00:00",
-        "validation": {
-          "balance": 198.87110146119002,
-          "equity": 198.87110146119002,
-          "peak": 201.83196149262002,
-          "day_start": 198.87110146119002,
-          "day": "2026-11-17",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-17 00:30:00+00:00"
-        },
-        "validation_closed": 1,
-        "validation_pnl": -1.1288985388099775
+        "qualified": "2026-11-15 18:15:00+00:00"
       },
       "grok_stochastic": {
         "account": {
@@ -263,23 +237,28 @@
           "balance": 198.28794962583024,
           "equity": 198.28794962583024,
           "peak": 201.24035005717045,
-          "day_start": 199.41362274024362,
-          "day": "2026-11-16",
+          "day_start": 198.28794962583024,
+          "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-16 21:00:00+00:00"
+          "cursor": "2026-11-17 00:30:00+00:00"
         },
         "closed": 3,
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 11,
-    "minute": "2026-11-17 00:55:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-17 00:56:00+00:00",
     "finalists": [
       "momentum",
+      "failed_breakdown",
       "grok_supertrend"
     ],
-    "validation_start": "2026-11-15 18:30:00+00:00"
+    "validation_start": "2026-11-17 00:30:00+00:00",
+    "last_result": {
+      "momentum": -1.7034411878809408,
+      "grok_supertrend": -1.1288985388099775
+    }
   }
 }
