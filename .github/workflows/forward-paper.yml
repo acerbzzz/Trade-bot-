@@ -5,7 +5,7 @@ on:
     - cron: '2-59/5 * * * *'
   push:
     branches: [main]
-    paths: ['.github/workflows/forward-paper.yml', 'scripts/forward.py', 'scripts/scorecard.py']
+    paths: ['.github/workflows/forward-paper.yml', 'scripts/forward.py', 'scripts/scorecard.py', 'scripts/forex_trials.py']
 permissions:
   contents: write
   actions: write
@@ -48,8 +48,21 @@ jobs:
           # A manual or recovery launch keeps polling if GitHub delays cron.
           # Scheduled jobs cover the minute ticks between five-minute triggers.
           deadline=$((SECONDS + 5400))
+          fx_hour=""
           while true; do
             if python scripts/forward.py "$dest" "$PYTHONPATH/configs/crypto.yml"; then
+              hour=$(date -u '+%Y-%m-%dT%H')
+              if [ "$fx_hour" != "$hour" ]; then
+                if python scripts/forex_trials.py "$dest/forex-trials.md"; then
+                  git -C "$dest" add forex-trials.md
+                else
+                  echo "::warning::Forex research refresh unavailable."
+                fi
+                fx_hour="$hour"
+              fi
+              if [ -f "$dest/forex-trials.md" ]; then
+                echo '[EUR/USD Forex trials](forex-trials.md)' >> "$dest/README.md"
+              fi
               checked=$(date -u '+%Y-%m-%d %H:%M UTC')
               printf '\nLast successful market check: **%s** · Target interval: 1 minute.\n' "$checked" >> "$dest/README.md"
               git -C "$dest" add account.json events.jsonl README.md
