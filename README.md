@@ -2,7 +2,7 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-16 21:15 UTC**.
+Latest completed candle ended **2026-11-17 00:45 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
@@ -10,8 +10,8 @@ Latest completed candle ended **2026-11-16 21:15 UTC**.
 
 | Market | Last close | Trend | Mean reversion | Breakout | Momentum |
 |---|---:|---|---|---|---|
-| BTC/USD | $64,992.20 | Waiting | Waiting | Waiting | Waiting |
-| ETH/USD | $1,819.21 | Waiting | Waiting | Waiting | Waiting |
+| BTC/USD | $64,531.00 | Waiting | Waiting | Waiting | Waiting |
+| ETH/USD | $1,812.42 | Waiting | Waiting | Waiting | Waiting |
 
 ## Strategy trials
 
@@ -22,7 +22,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | trend | 3 | $-3.26 | Pending | — |
 | reversion | 5 | $-1.56 | Pending | — |
 | breakout | 3 | $-1.62 | Pending | — |
-| momentum | 3 | $-1.64 | Yes | — |
+| momentum | 4 | $-1.57 | Yes | — |
 | relative_strength | 1 | $-1.50 | Pending | — |
 | vwap_pullback | 1 | $-0.71 | Pending | — |
 | failed_breakdown | 6 | $-0.60 | Pending | — |
@@ -38,4 +38,7 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-16 21:20 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-17 00:48 UTC** · Target interval: 1 minute.
+Worker started: **2026-11-17 00:48 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/43990594942) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/f24a8e65593260a0f848b2af98f28486972da661)
+
+[Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
