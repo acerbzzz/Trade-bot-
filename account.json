@@ -136,48 +136,30 @@
       },
       "momentum": {
         "account": {
-          "balance": 197.70742225310087,
-          "equity": 196.83177722774522,
+          "balance": 196.74157581810016,
+          "equity": 196.74157581810016,
           "peak": 201.05397359135006,
           "day_start": 198.43099041412145,
           "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1821.236207,
-              "qty": 0.07590000000000001,
-              "stop": 1804.0619923515283,
-              "target": 1871.9023055976836,
-              "capital": 138.23182811130002,
-              "opened": "2026-11-17 12:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-17 12:00:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-17 12:15:00+00:00"
         },
-        "closed": 5,
+        "closed": 6,
         "qualified": "2026-11-15 14:45:00+00:00",
         "validation": {
-          "balance": 199.27084444005263,
-          "equity": 198.38827731963488,
+          "balance": 198.29736285536814,
+          "equity": 198.29736285536814,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1821.236207,
-              "qty": 0.0765,
-              "stop": 1804.0619923515283,
-              "target": 1871.9023055976836,
-              "capital": 139.3245698355,
-              "opened": "2026-11-17 12:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-17 12:00:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-17 12:15:00+00:00"
         },
-        "validation_closed": 1
+        "validation_closed": 2
       },
       "relative_strength": {
         "account": {
@@ -378,8 +360,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 3,
-    "minute": "2026-11-17 12:35:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-17 12:36:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
