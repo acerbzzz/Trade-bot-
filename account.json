@@ -1,6 +1,6 @@
 {
   "balance": 198.1014885373329,
-  "equity": 198.6705021303906,
+  "equity": 198.37209213039057,
   "peak": 201.353627874134,
   "day_start": 198.62015234012256,
   "day": "2026-11-17",
@@ -17,7 +17,7 @@
       "strategy": "breakout"
     }
   },
-  "cursor": "2026-11-17 14:30:00+00:00",
+  "cursor": "2026-11-17 14:45:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -144,7 +144,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-17 14:30:00+00:00"
+          "cursor": "2026-11-17 14:45:00+00:00"
         },
         "closed": 6,
         "qualified": "2026-11-15 14:45:00+00:00",
@@ -157,7 +157,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-17 14:30:00+00:00"
+          "cursor": "2026-11-17 14:45:00+00:00"
         },
         "validation_closed": 2
       },
@@ -378,8 +378,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 3,
-    "minute": "2026-11-17 14:59:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-17 15:00:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
