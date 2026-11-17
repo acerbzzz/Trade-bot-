@@ -227,49 +227,31 @@
       },
       "grok_supertrend": {
         "account": {
-          "balance": 198.91093010891532,
-          "equity": 198.25329540710032,
+          "balance": 197.42062073427897,
+          "equity": 197.42062073427897,
           "peak": 201.87601994039022,
           "day_start": 198.91093010891532,
           "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1833.6499299999998,
-              "qty": 0.091,
-              "stop": 1819.6451720609678,
-              "target": 1876.4475439742494,
-              "capital": 166.86214363,
-              "opened": "2026-11-17 05:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-17 06:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-17 06:30:00+00:00"
         },
-        "closed": 2,
+        "closed": 3,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-15 18:15:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 199.33875192070252,
+          "balance": 198.5015021123162,
+          "equity": 198.5015021123162,
           "peak": 200.37361692070252,
           "day_start": 200,
           "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1833.6499299999998,
-              "qty": 0.0915,
-              "stop": 1819.6451720609678,
-              "target": 1876.4475439742494,
-              "capital": 167.77896859499998,
-              "opened": "2026-11-17 05:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-17 06:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-17 06:30:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "grok_stochastic": {
         "account": {
@@ -302,8 +284,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 9,
-    "minute": "2026-11-17 06:53:00+00:00",
+    "turn": 10,
+    "minute": "2026-11-17 06:54:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
