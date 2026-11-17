@@ -106,7 +106,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-17 14:00:00+00:00"
+          "cursor": "2026-11-17 14:15:00+00:00"
         },
         "closed": 6,
         "qualified": "2026-11-17 11:45:00+00:00"
@@ -378,8 +378,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 1,
-    "minute": "2026-11-17 14:33:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-17 14:34:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
