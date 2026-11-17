@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-17 15:15:00+00:00",
+  "cursor": "2026-11-17 15:30:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -65,26 +65,17 @@
     "cards": {
       "trend": {
         "account": {
-          "balance": 196.73909866740445,
-          "equity": 197.15205585287444,
+          "balance": 195.26735599891597,
+          "equity": 195.26735599891597,
           "peak": 200.0498323580292,
           "day_start": 196.73909866740445,
           "day": "2026-11-17",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 64775.4268,
-              "qty": 0.0029500000000000004,
-              "stop": 64360.397357399714,
-              "target": 66088.09811202252,
-              "capital": 191.08750906000003,
-              "opened": "2026-11-17 12:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-17 15:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-17 15:30:00+00:00"
         },
-        "closed": 3
+        "closed": 4
       },
       "reversion": {
         "account": {
@@ -332,8 +323,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 0,
-    "minute": "2026-11-17 15:44:00+00:00",
+    "turn": 1,
+    "minute": "2026-11-17 15:45:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
