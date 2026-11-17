@@ -144,7 +144,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-17 10:00:00+00:00"
+          "cursor": "2026-11-17 10:15:00+00:00"
         },
         "closed": 1,
         "start": "2026-11-14 14:45:00+00:00",
@@ -152,7 +152,7 @@
           "BTC/USD": 65860.0,
           "ETH/USD": 1852.51
         },
-        "benchmark_equity": 194.37179212684947
+        "benchmark_equity": 193.94857394086333
       },
       "vwap_pullback": {
         "account": {
@@ -286,8 +286,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 4,
-    "minute": "2026-11-17 10:36:00+00:00",
+    "turn": 5,
+    "minute": "2026-11-17 10:37:00+00:00",
     "finalists": [
       "momentum",
       "failed_breakdown",
