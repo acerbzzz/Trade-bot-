@@ -330,14 +330,14 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-18 07:30:00+00:00"
+          "cursor": "2026-11-18 07:45:00+00:00"
         },
         "closed": 4,
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 11,
-    "minute": "2026-11-18 08:07:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-18 08:08:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
