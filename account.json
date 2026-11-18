@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-18 11:00:00+00:00",
+  "cursor": "2026-11-18 11:15:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -240,26 +240,17 @@
       },
       "grok_supertrend": {
         "account": {
-          "balance": 195.94085459512937,
-          "equity": 194.73796223586078,
+          "balance": 194.61846427289717,
+          "equity": 194.61846427289717,
           "peak": 201.87601994039022,
           "day_start": 196.56503423586076,
           "day": "2026-11-18",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 64577.96758,
-              "qty": 0.00234,
-              "stop": 64035.828241985124,
-              "target": 66207.47875072592,
-              "capital": 151.1124441372,
-              "opened": "2026-11-17 22:30:00+00:00"
-            }
-          },
-          "cursor": "2026-11-18 11:00:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-18 11:15:00+00:00"
         },
-        "closed": 4,
+        "closed": 5,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-15 18:15:00+00:00",
         "validation": {
@@ -271,7 +262,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-18 11:00:00+00:00"
+          "cursor": "2026-11-18 11:15:00+00:00"
         },
         "validation_closed": 0
       },
@@ -306,8 +297,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 9,
-    "minute": "2026-11-18 11:29:00+00:00",
+    "turn": 10,
+    "minute": "2026-11-18 11:30:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
