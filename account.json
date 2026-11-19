@@ -210,51 +210,31 @@
       },
       "failed_breakdown": {
         "account": {
-          "balance": 199.11700723502724,
-          "equity": 197.896792808788,
+          "balance": 197.799349478284,
+          "equity": 197.799349478284,
           "peak": 205.42147379665846,
           "day_start": 199.11700723502724,
           "day": "2026-11-19",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 62070.71563,
-              "qty": 0.0019500000000000001,
-              "stop": 61385.828221142554,
-              "target": 64046.32970610584,
-              "capital": 121.0378954785,
-              "opened": "2026-11-19 20:45:00+00:00",
-              "reclaimed_low": 61800.0
-            }
-          },
-          "cursor": "2026-11-19 21:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-19 21:30:00+00:00"
         },
-        "closed": 12,
+        "closed": 13,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-17 00:30:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 198.7735280638826,
+          "balance": 198.6755850239914,
+          "equity": 198.6755850239914,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-19",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 62070.71563,
-              "qty": 0.0019600000000000004,
-              "stop": 61385.828221142554,
-              "target": 64046.32970610584,
-              "capital": 121.65860263480002,
-              "opened": "2026-11-19 20:45:00+00:00",
-              "reclaimed_low": 61800.0
-            }
-          },
-          "cursor": "2026-11-19 21:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-19 21:30:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "grok_pullback": {
         "account": {
@@ -345,8 +325,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 6,
-    "minute": "2026-11-19 21:50:00+00:00",
+    "turn": 7,
+    "minute": "2026-11-19 21:51:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
