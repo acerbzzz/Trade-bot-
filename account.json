@@ -83,48 +83,30 @@
       },
       "reversion": {
         "account": {
-          "balance": 199.4890210370551,
-          "equity": 199.14673870861765,
+          "balance": 197.99846930203807,
+          "equity": 197.99846930203807,
           "peak": 201.0076523140045,
           "day_start": 199.4890210370551,
           "day": "2026-11-19",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 62835.545009999994,
-              "qty": 0.00249,
-              "stop": 62318.19283441829,
-              "target": 64395.69851832742,
-              "capital": 156.4605070749,
-              "opened": "2026-11-19 15:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-19 16:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-19 17:00:00+00:00"
         },
-        "closed": 8,
+        "closed": 9,
         "qualified": "2026-11-17 11:45:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 199.6563430437375,
+          "balance": 198.5034621134367,
+          "equity": 198.5034621134367,
           "peak": 200.6553430437375,
           "day_start": 200,
           "day": "2026-11-19",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 62835.545009999994,
-              "qty": 0.0025,
-              "stop": 62318.19283441829,
-              "target": 64395.69851832742,
-              "capital": 157.088862525,
-              "opened": "2026-11-19 15:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-19 16:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-19 17:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "breakout": {
         "account": {
@@ -319,8 +301,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 1,
-    "minute": "2026-11-19 17:21:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-19 17:22:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
