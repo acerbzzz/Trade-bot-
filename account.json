@@ -1,23 +1,13 @@
 {
-  "balance": 194.46434781239603,
-  "equity": 194.78909308644924,
+  "balance": 194.66954905903106,
+  "equity": 194.66954905903106,
   "peak": 201.353627874134,
   "day_start": 195.9311732627315,
   "day": "2026-11-19",
   "halted": false,
   "day_halt": false,
-  "positions": {
-    "BTC/USD": {
-      "entry": 63154.14055999999,
-      "qty": 0.00231,
-      "stop": 62606.3230975804,
-      "target": 64791.78902536564,
-      "capital": 145.8860646936,
-      "opened": "2026-11-19 04:00:00+00:00",
-      "strategy": "trend"
-    }
-  },
-  "cursor": "2026-11-19 15:15:00+00:00",
+  "positions": {},
+  "cursor": "2026-11-19 15:30:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -65,36 +55,31 @@
     "BTC/USD": false,
     "ETH/USD": false
   },
-  "closed": 11,
+  "closed": 12,
   "strategy_signals": {
-    "BTC/USD": [],
-    "ETH/USD": []
+    "BTC/USD": [
+      "reversion"
+    ],
+    "ETH/USD": [
+      "reversion"
+    ]
   },
   "strategy_trials": {
     "start": "2026-11-14 14:45:00+00:00",
     "cards": {
       "trend": {
         "account": {
-          "balance": 193.80677235900745,
-          "equity": 194.13011180936348,
+          "balance": 194.01108528855747,
+          "equity": 194.01108528855747,
           "peak": 200.0498323580292,
           "day_start": 195.26735599891597,
           "day": "2026-11-19",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 63154.14055999999,
-              "qty": 0.0023000000000000004,
-              "stop": 62606.3230975804,
-              "target": 64791.78902536564,
-              "capital": 145.254523288,
-              "opened": "2026-11-19 04:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-19 15:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-19 15:30:00+00:00"
         },
-        "closed": 5
+        "closed": 6
       },
       "reversion": {
         "account": {
@@ -316,8 +301,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 0,
-    "minute": "2026-11-19 15:44:00+00:00",
+    "turn": 1,
+    "minute": "2026-11-19 15:45:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
