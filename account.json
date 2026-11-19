@@ -90,20 +90,7 @@
           "cursor": "2026-11-19 00:30:00+00:00"
         },
         "closed": 8,
-        "qualified": "2026-11-17 11:45:00+00:00",
-        "validation": {
-          "balance": 199.3452236425469,
-          "equity": 199.3452236425469,
-          "peak": 200.8554007567115,
-          "day_start": 199.3452236425469,
-          "day": "2026-11-19",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-19 00:30:00+00:00"
-        },
-        "validation_closed": 2,
-        "validation_pnl": -0.6547763574531018
+        "qualified": "2026-11-17 11:45:00+00:00"
       },
       "breakout": {
         "account": {
@@ -132,20 +119,7 @@
           "cursor": "2026-11-19 00:30:00+00:00"
         },
         "closed": 7,
-        "qualified": "2026-11-15 14:45:00+00:00",
-        "validation": {
-          "balance": 199.66996103899524,
-          "equity": 199.66996103899524,
-          "peak": 200.3123609935454,
-          "day_start": 199.66996103899524,
-          "day": "2026-11-19",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-19 00:30:00+00:00"
-        },
-        "validation_closed": 1,
-        "validation_pnl": -0.33003896100476027
+        "qualified": "2026-11-15 14:45:00+00:00"
       },
       "relative_strength": {
         "account": {
@@ -205,20 +179,7 @@
         },
         "closed": 12,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-17 00:30:00+00:00",
-        "validation": {
-          "balance": 198.5578485943867,
-          "equity": 198.5578485943867,
-          "peak": 200.87779165739113,
-          "day_start": 198.5578485943867,
-          "day": "2026-11-19",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-19 00:30:00+00:00"
-        },
-        "validation_closed": 2,
-        "validation_pnl": -1.4421514056132878
+        "qualified": "2026-11-17 00:30:00+00:00"
       },
       "grok_pullback": {
         "account": {
@@ -273,29 +234,7 @@
         },
         "closed": 5,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-15 18:15:00+00:00",
-        "validation": {
-          "balance": 200,
-          "equity": 200.18176598242502,
-          "peak": 200.18176598242502,
-          "day_start": 199.88501598242502,
-          "day": "2026-11-19",
-          "halted": false,
-          "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 62999.094059999996,
-              "qty": 0.0025,
-              "stop": 62482.15613370363,
-              "target": 64558.90762561756,
-              "capital": 157.49773514999998,
-              "opened": "2026-11-18 23:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-19 00:30:00+00:00"
-        },
-        "validation_closed": 0,
-        "validation_pnl": 0.18176598242501996
+        "qualified": "2026-11-15 18:15:00+00:00"
       },
       "grok_stochastic": {
         "account": {
@@ -322,25 +261,26 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-19 00:15:00+00:00"
+          "cursor": "2026-11-19 00:30:00+00:00"
         },
         "closed": 4,
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 11,
-    "minute": "2026-11-19 00:55:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-19 00:56:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
       "failed_breakdown",
       "grok_supertrend"
     ],
-    "validation_start": "2026-11-18 00:30:00+00:00",
+    "validation_start": "2026-11-19 00:30:00+00:00",
     "last_result": {
-      "momentum": -1.7026371446318649,
-      "failed_breakdown": -1.5685067974348783,
-      "grok_supertrend": -2.89164391375715
+      "reversion": -0.6547763574531018,
+      "momentum": -0.33003896100476027,
+      "failed_breakdown": -1.4421514056132878,
+      "grok_supertrend": 0.18176598242501996
     }
   }
 }
