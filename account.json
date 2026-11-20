@@ -73,7 +73,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-20 21:30:00+00:00"
+          "cursor": "2026-11-20 21:45:00+00:00"
         },
         "closed": 6
       },
@@ -335,8 +335,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 0,
-    "minute": "2026-11-20 22:08:00+00:00",
+    "turn": 1,
+    "minute": "2026-11-20 22:09:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
