@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-20 10:00:00+00:00",
+  "cursor": "2026-11-20 10:15:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -268,7 +268,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-20 10:00:00+00:00"
+          "cursor": "2026-11-20 10:15:00+00:00"
         },
         "closed": 6,
         "start": "2026-11-14 14:45:00+00:00",
@@ -282,7 +282,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-20 10:00:00+00:00"
+          "cursor": "2026-11-20 10:15:00+00:00"
         },
         "validation_closed": 0
       },
@@ -317,8 +317,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 9,
-    "minute": "2026-11-20 10:29:00+00:00",
+    "turn": 10,
+    "minute": "2026-11-20 10:30:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
