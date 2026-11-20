@@ -90,20 +90,7 @@
           "cursor": "2026-11-20 00:30:00+00:00"
         },
         "closed": 11,
-        "qualified": "2026-11-17 11:45:00+00:00",
-        "validation": {
-          "balance": 200.93625301149734,
-          "equity": 200.93625301149734,
-          "peak": 201.36556209013702,
-          "day_start": 200.85825209013703,
-          "day": "2026-11-20",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-20 00:30:00+00:00"
-        },
-        "validation_closed": 3,
-        "validation_pnl": 0.9362530114973424
+        "qualified": "2026-11-17 11:45:00+00:00"
       },
       "breakout": {
         "account": {
@@ -132,20 +119,7 @@
           "cursor": "2026-11-20 00:30:00+00:00"
         },
         "closed": 9,
-        "qualified": "2026-11-15 14:45:00+00:00",
-        "validation": {
-          "balance": 198.9325682843829,
-          "equity": 198.9325682843829,
-          "peak": 200.9542861686813,
-          "day_start": 198.9325682843829,
-          "day": "2026-11-20",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-20 00:30:00+00:00"
-        },
-        "validation_closed": 2,
-        "validation_pnl": -1.06743171561709
+        "qualified": "2026-11-15 14:45:00+00:00"
       },
       "relative_strength": {
         "account": {
@@ -206,30 +180,7 @@
         },
         "closed": 13,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-17 00:30:00+00:00",
-        "validation": {
-          "balance": 198.6755850239914,
-          "equity": 199.43626204704492,
-          "peak": 200,
-          "day_start": 199.1658260470449,
-          "day": "2026-11-20",
-          "halted": false,
-          "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 61629.98345,
-              "qty": 0.00194,
-              "stop": 60943.56108732878,
-              "target": 63607.559875992796,
-              "capital": 119.56216789300001,
-              "opened": "2026-11-19 21:45:00+00:00",
-              "reclaimed_low": 61440.0
-            }
-          },
-          "cursor": "2026-11-20 00:30:00+00:00"
-        },
-        "validation_closed": 1,
-        "validation_pnl": -0.5637379529550799
+        "qualified": "2026-11-17 00:30:00+00:00"
       },
       "grok_pullback": {
         "account": {
@@ -275,20 +226,7 @@
         },
         "closed": 6,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-15 18:15:00+00:00",
-        "validation": {
-          "balance": 200,
-          "equity": 200,
-          "peak": 200,
-          "day_start": 200,
-          "day": "2026-11-20",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-20 00:30:00+00:00"
-        },
-        "validation_closed": 0,
-        "validation_pnl": 0
+        "qualified": "2026-11-15 18:15:00+00:00"
       },
       "grok_stochastic": {
         "account": {
@@ -315,26 +253,26 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-20 00:15:00+00:00"
+          "cursor": "2026-11-20 00:30:00+00:00"
         },
         "closed": 5,
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 11,
-    "minute": "2026-11-20 00:55:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-20 00:56:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
       "failed_breakdown",
       "grok_supertrend"
     ],
-    "validation_start": "2026-11-19 00:30:00+00:00",
+    "validation_start": "2026-11-20 00:30:00+00:00",
     "last_result": {
-      "reversion": -0.6547763574531018,
-      "momentum": -0.33003896100476027,
-      "failed_breakdown": -1.4421514056132878,
-      "grok_supertrend": 0.18176598242501996
+      "reversion": 0.9362530114973424,
+      "momentum": -1.06743171561709,
+      "failed_breakdown": -0.5637379529550799,
+      "grok_supertrend": 0
     }
   }
 }

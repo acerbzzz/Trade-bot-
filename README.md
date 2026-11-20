@@ -20,27 +20,27 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | Strategy | Closed | Realized P&L | Shortlisted | Next-day validation P&L |
 |---|---:|---:|---|---:|
 | trend | 6 | $-5.99 | Pending | — |
-| reversion | 11 | $+0.43 | Yes | $-0.65 |
+| reversion | 11 | $+0.43 | Yes | $+0.94 |
 | breakout | 9 | $-6.35 | Pending | — |
-| momentum | 9 | $-4.63 | Yes | $-0.33 |
+| momentum | 9 | $-4.63 | Yes | $-1.07 |
 | relative_strength | 2 | $-2.99 | Pending | — |
 | vwap_pullback | 12 | $-6.40 | Pending | — |
-| failed_breakdown | 13 | $-2.20 | Yes | $-1.44 |
+| failed_breakdown | 13 | $-2.20 | Yes | $-0.56 |
 | grok_pullback | 10 | $-10.46 | Pending | — |
 | grok_squeeze | 5 | $-4.17 | Pending | — |
-| grok_supertrend | 6 | $-6.84 | Yes | $+0.18 |
+| grok_supertrend | 6 | $-6.84 | Yes | $+0.00 |
 | grok_stochastic | 1 | $-0.18 | Pending | — |
 | grok_confluence | 5 | $-2.50 | Pending | — |
 
 Relative strength trial equity: $197.01. 50/50 BTC–ETH buy-and-hold liquidation value: $188.58.
 
-Validation leader: grok_supertrend
+Validation leader: reversion
 
 Started with $200 simulated USD. Entries and exits are modeled from candles. No broker orders.
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-20 00:55 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-20 00:56 UTC** · Target interval: 1 minute.
 Worker started: **2026-11-20 00:49 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/44640477946) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/ef6b08cc975dbae4dd8069bf59c32ab3d35063b3)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
