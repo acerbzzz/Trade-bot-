@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-20 18:45:00+00:00",
+  "cursor": "2026-11-20 19:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -182,51 +182,31 @@
       },
       "failed_breakdown": {
         "account": {
-          "balance": 195.68361144732182,
-          "equity": 195.23727170168343,
+          "balance": 195.18457842832504,
+          "equity": 195.18457842832504,
           "peak": 205.42147379665846,
           "day_start": 198.28706348575474,
           "day": "2026-11-20",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1624.807296,
-              "qty": 0.0408,
-              "stop": 1590.9348910313772,
-              "target": 1716.3711799610155,
-              "capital": 66.2921376768,
-              "opened": "2026-11-20 17:45:00+00:00",
-              "reclaimed_low": 1622.13
-            }
-          },
-          "cursor": "2026-11-20 18:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-20 19:00:00+00:00"
         },
-        "closed": 16,
+        "closed": 17,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-17 00:30:00+00:00",
         "validation": {
-          "balance": 197.63952535771733,
-          "equity": 197.18880973221974,
+          "balance": 197.13559985814214,
+          "equity": 197.13559985814214,
           "peak": 201.27651235002418,
           "day_start": 200,
           "day": "2026-11-20",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1624.807296,
-              "qty": 0.0412,
-              "stop": 1590.9348910313772,
-              "target": 1716.3711799610155,
-              "capital": 66.9420605952,
-              "opened": "2026-11-20 17:45:00+00:00",
-              "reclaimed_low": 1622.13
-            }
-          },
-          "cursor": "2026-11-20 18:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-20 19:00:00+00:00"
         },
-        "validation_closed": 2
+        "validation_closed": 3
       },
       "grok_pullback": {
         "account": {
@@ -317,8 +297,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 6,
-    "minute": "2026-11-20 19:14:00+00:00",
+    "turn": 7,
+    "minute": "2026-11-20 19:15:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
