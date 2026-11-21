@@ -1,23 +1,13 @@
 {
-  "balance": 190.27778469855159,
-  "equity": 190.12365591821575,
+  "balance": 188.8550601050212,
+  "equity": 188.8550601050212,
   "peak": 201.353627874134,
   "day_start": 190.27778469855159,
   "day": "2026-11-21",
   "halted": false,
   "day_halt": false,
-  "positions": {
-    "BTC/USD": {
-      "entry": 56698.90457,
-      "qty": 0.0018100000000000002,
-      "stop": 55985.99873634091,
-      "target": 58721.70409191432,
-      "capital": 102.6250172717,
-      "opened": "2026-11-21 03:45:00+00:00",
-      "strategy": "reversion"
-    }
-  },
-  "cursor": "2026-11-21 03:45:00+00:00",
+  "positions": {},
+  "cursor": "2026-11-21 04:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -65,7 +55,7 @@
     "BTC/USD": false,
     "ETH/USD": false
   },
-  "closed": 20,
+  "closed": 21,
   "strategy_signals": {
     "BTC/USD": [
       "reversion"
@@ -214,31 +204,31 @@
       },
       "failed_breakdown": {
         "account": {
-          "balance": 193.72620114167006,
-          "equity": 193.72620114167006,
+          "balance": 192.2738908303454,
+          "equity": 192.2738908303454,
           "peak": 205.42147379665846,
           "day_start": 196.2286870049162,
           "day": "2026-11-21",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-21 03:45:00+00:00"
+          "cursor": "2026-11-21 04:00:00+00:00"
         },
-        "closed": 18,
+        "closed": 19,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-17 00:30:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 200,
+          "balance": 198.5061951083518,
+          "equity": 198.5061951083518,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-21",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-21 03:45:00+00:00"
+          "cursor": "2026-11-21 04:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "grok_pullback": {
         "account": {
@@ -329,8 +319,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 6,
-    "minute": "2026-11-21 04:14:00+00:00",
+    "turn": 7,
+    "minute": "2026-11-21 04:15:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
