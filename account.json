@@ -87,10 +87,22 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-21 00:30:00+00:00"
+          "cursor": "2026-11-21 00:45:00+00:00"
         },
         "closed": 14,
-        "qualified": "2026-11-17 11:45:00+00:00"
+        "qualified": "2026-11-17 11:45:00+00:00",
+        "validation": {
+          "balance": 200,
+          "equity": 200,
+          "peak": 200,
+          "day_start": 200,
+          "day": "2026-11-21",
+          "halted": false,
+          "day_halt": false,
+          "positions": {},
+          "cursor": "2026-11-21 00:45:00+00:00"
+        },
+        "validation_closed": 0
       },
       "breakout": {
         "account": {
@@ -313,8 +325,8 @@
         "start": "2026-11-14 14:45:00+00:00"
       }
     },
-    "turn": 1,
-    "minute": "2026-11-21 01:09:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-21 01:10:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
