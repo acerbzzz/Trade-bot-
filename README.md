@@ -20,7 +20,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | Strategy | Closed | Realized P&L | Shortlisted | Next-day validation P&L |
 |---|---:|---:|---|---:|
 | trend | 6 | $-5.99 | Pending | — |
-| reversion | 15 | $-3.54 | Yes | $-2.49 |
+| reversion | 16 | $-1.73 | Yes | $-2.49 |
 | breakout | 10 | $-7.80 | Pending | — |
 | momentum | 10 | $-6.10 | Yes | $-1.50 |
 | relative_strength | 2 | $-2.99 | Pending | — |
@@ -40,7 +40,7 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-21 07:09 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-21 07:10 UTC** · Target interval: 1 minute.
 Worker started: **2026-11-21 06:49 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/44877360047) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/9aa0436d0ddccf5732c9dd6ddd5b94d491b93b3a)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
