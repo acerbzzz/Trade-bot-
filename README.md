@@ -41,6 +41,6 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
 Last successful market check: **2026-11-21 21:49 UTC** · Target interval: 1 minute.
-Worker started: **2026-11-21 20:19 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/44945663143) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/9c7f3be65c2aadea6d7d002803882aa496ea55ec)
+Worker started: **2026-11-21 21:49 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/44953521172) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/6b09973df13a21ed90840eaa07c2eaad6256924c)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
