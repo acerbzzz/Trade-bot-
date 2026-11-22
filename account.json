@@ -329,8 +329,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 11,
-    "minute": "2026-11-22 15:43:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-22 15:44:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
