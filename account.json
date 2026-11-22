@@ -138,7 +138,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-22 00:15:00+00:00"
+          "cursor": "2026-11-22 00:30:00+00:00"
         },
         "closed": 11,
         "qualified": "2026-11-15 14:45:00+00:00",
@@ -151,9 +151,10 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-22 00:15:00+00:00"
+          "cursor": "2026-11-22 00:30:00+00:00"
         },
-        "validation_closed": 1
+        "validation_closed": 1,
+        "validation_pnl": 3.74255412672656
       },
       "relative_strength": {
         "account": {
@@ -326,8 +327,8 @@
         "qualified": "2026-11-21 13:30:00+00:00"
       }
     },
-    "turn": 3,
-    "minute": "2026-11-22 00:47:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-22 00:48:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
