@@ -132,27 +132,45 @@
       "momentum": {
         "account": {
           "balance": 197.53489015103725,
-          "equity": 197.53489015103725,
+          "equity": 197.51545388059725,
           "peak": 201.05397359135006,
           "day_start": 197.53489015103725,
           "day": "2026-11-22",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-22 15:45:00+00:00"
+          "positions": {
+            "ETH/USD": {
+              "entry": 1716.3847609999998,
+              "qty": 0.08,
+              "stop": 1700.1039117953214,
+              "target": 1764.3723137849615,
+              "capital": 137.31078087999998,
+              "opened": "2026-11-22 16:00:00+00:00"
+            }
+          },
+          "cursor": "2026-11-22 16:00:00+00:00"
         },
         "closed": 11,
         "qualified": "2026-11-15 14:45:00+00:00",
         "validation": {
           "balance": 200,
-          "equity": 200,
+          "equity": 199.98032077617952,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-22",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-22 15:45:00+00:00"
+          "positions": {
+            "ETH/USD": {
+              "entry": 1716.3847609999998,
+              "qty": 0.081,
+              "stop": 1700.1039117953214,
+              "target": 1764.3723137849615,
+              "capital": 139.02716564099998,
+              "opened": "2026-11-22 16:00:00+00:00"
+            }
+          },
+          "cursor": "2026-11-22 16:00:00+00:00"
         },
         "validation_closed": 0
       },
@@ -348,8 +366,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 3,
-    "minute": "2026-11-22 16:23:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-22 16:24:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
