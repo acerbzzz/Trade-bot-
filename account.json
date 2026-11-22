@@ -73,7 +73,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-22 17:30:00+00:00"
+          "cursor": "2026-11-22 17:45:00+00:00"
         },
         "closed": 9,
         "qualified": "2026-11-22 12:15:00+00:00"
@@ -330,8 +330,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 0,
-    "minute": "2026-11-22 18:08:00+00:00",
+    "turn": 1,
+    "minute": "2026-11-22 18:09:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
