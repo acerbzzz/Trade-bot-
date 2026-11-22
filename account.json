@@ -1,13 +1,23 @@
 {
   "balance": 192.728323691716,
-  "equity": 192.728323691716,
+  "equity": 192.1192942838902,
   "peak": 201.353627874134,
   "day_start": 193.6601497010464,
   "day": "2026-11-22",
   "halted": false,
   "day_halt": false,
-  "positions": {},
-  "cursor": "2026-11-22 21:00:00+00:00",
+  "positions": {
+    "ETH/USD": {
+      "entry": 1722.056462,
+      "qty": 0.11180000000000001,
+      "stop": 1711.5080801010956,
+      "target": 1755.741260530698,
+      "capital": 192.52591245160002,
+      "opened": "2026-11-22 21:15:00+00:00",
+      "strategy": "momentum"
+    }
+  },
+  "cursor": "2026-11-22 21:45:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -58,9 +68,7 @@
   "closed": 29,
   "strategy_signals": {
     "BTC/USD": [],
-    "ETH/USD": [
-      "momentum"
-    ]
+    "ETH/USD": []
   },
   "strategy_trials": {
     "start": "2026-11-14 14:45:00+00:00",
@@ -238,14 +246,23 @@
       "grok_squeeze": {
         "account": {
           "balance": 195.4962921870102,
-          "equity": 195.4962921870102,
+          "equity": 194.8059127231284,
           "peak": 200.1214139530808,
           "day_start": 196.16589177143098,
           "day": "2026-11-22",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-22 20:45:00+00:00"
+          "positions": {
+            "ETH/USD": {
+              "entry": 1722.696654,
+              "qty": 0.1134,
+              "stop": 1712.1337124647202,
+              "target": 1756.4205626388057,
+              "capital": 195.3538005636,
+              "opened": "2026-11-22 21:45:00+00:00"
+            }
+          },
+          "cursor": "2026-11-22 21:45:00+00:00"
         },
         "closed": 8,
         "start": "2026-11-14 14:45:00+00:00"
@@ -332,8 +349,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 8,
-    "minute": "2026-11-22 21:16:00+00:00",
+    "turn": 9,
+    "minute": "2026-11-22 22:04:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
