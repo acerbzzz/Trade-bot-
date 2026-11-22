@@ -1,6 +1,6 @@
 {
   "balance": 190.8332527014773,
-  "equity": 190.56575488601482,
+  "equity": 191.1891188860148,
   "peak": 201.353627874134,
   "day_start": 193.6601497010464,
   "day": "2026-11-22",
@@ -17,7 +17,7 @@
       "strategy": "breakout"
     }
   },
-  "cursor": "2026-11-22 09:00:00+00:00",
+  "cursor": "2026-11-22 09:15:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -62,14 +62,12 @@
     }
   },
   "signals": {
-    "BTC/USD": true,
+    "BTC/USD": false,
     "ETH/USD": false
   },
   "closed": 26,
   "strategy_signals": {
-    "BTC/USD": [
-      "trend"
-    ],
+    "BTC/USD": [],
     "ETH/USD": []
   },
   "strategy_trials": {
@@ -280,7 +278,7 @@
       "grok_supertrend": {
         "account": {
           "balance": 193.84208249291956,
-          "equity": 194.47946378316348,
+          "equity": 194.93849978316345,
           "peak": 201.87601994039022,
           "day_start": 193.84208249291956,
           "day": "2026-11-22",
@@ -296,15 +294,15 @@
               "opened": "2026-11-22 08:15:00+00:00"
             }
           },
-          "cursor": "2026-11-22 09:00:00+00:00"
+          "cursor": "2026-11-22 09:15:00+00:00"
         },
         "closed": 9,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-15 18:15:00+00:00",
         "validation": {
           "balance": 200,
-          "equity": 200.6578758654929,
-          "peak": 200.9968518654929,
+          "equity": 201.1316718654929,
+          "peak": 201.1316718654929,
           "day_start": 200,
           "day": "2026-11-22",
           "halted": false,
@@ -319,7 +317,7 @@
               "opened": "2026-11-22 08:15:00+00:00"
             }
           },
-          "cursor": "2026-11-22 09:00:00+00:00"
+          "cursor": "2026-11-22 09:15:00+00:00"
         },
         "validation_closed": 0
       },
@@ -385,8 +383,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 9,
-    "minute": "2026-11-22 09:29:00+00:00",
+    "turn": 10,
+    "minute": "2026-11-22 09:30:00+00:00",
     "finalists": [
       "reversion",
       "momentum",
