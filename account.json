@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-23 03:00:00+00:00",
+  "cursor": "2026-11-23 03:15:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -52,13 +52,20 @@
     }
   },
   "signals": {
-    "BTC/USD": false,
-    "ETH/USD": false
+    "BTC/USD": true,
+    "ETH/USD": true
   },
   "closed": 31,
   "strategy_signals": {
-    "BTC/USD": [],
-    "ETH/USD": []
+    "BTC/USD": [
+      "trend",
+      "momentum"
+    ],
+    "ETH/USD": [
+      "trend",
+      "breakout",
+      "momentum"
+    ]
   },
   "strategy_trials": {
     "start": "2026-11-14 14:45:00+00:00",
@@ -289,7 +296,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-23 03:00:00+00:00"
+          "cursor": "2026-11-23 03:15:00+00:00"
         },
         "closed": 5,
         "start": "2026-11-14 14:45:00+00:00",
@@ -303,7 +310,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-23 03:00:00+00:00"
+          "cursor": "2026-11-23 03:15:00+00:00"
         },
         "validation_closed": 0
       },
@@ -336,8 +343,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 10,
-    "minute": "2026-11-23 03:29:00+00:00",
+    "turn": 11,
+    "minute": "2026-11-23 03:30:00+00:00",
     "finalists": [
       "trend",
       "reversion",
