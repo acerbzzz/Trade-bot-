@@ -119,17 +119,17 @@
       },
       "breakout": {
         "account": {
-          "balance": 194.05194140267122,
-          "equity": 194.05194140267122,
+          "balance": 192.6006047013819,
+          "equity": 192.6006047013819,
           "peak": 201.33761138322504,
           "day_start": 196.26631997864436,
           "day": "2026-11-23",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-23 14:15:00+00:00"
+          "cursor": "2026-11-23 14:30:00+00:00"
         },
-        "closed": 15
+        "closed": 16
       },
       "momentum": {
         "account": {
@@ -336,8 +336,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 2,
-    "minute": "2026-11-23 14:45:00+00:00",
+    "turn": 3,
+    "minute": "2026-11-23 14:46:00+00:00",
     "finalists": [
       "trend",
       "reversion",
