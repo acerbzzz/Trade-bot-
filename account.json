@@ -133,30 +133,30 @@
       },
       "momentum": {
         "account": {
-          "balance": 193.1950847543203,
-          "equity": 193.1950847543203,
+          "balance": 191.75192871417244,
+          "equity": 191.75192871417244,
           "peak": 201.05397359135006,
           "day_start": 195.81327217732274,
           "day": "2026-11-23",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-23 13:45:00+00:00"
+          "cursor": "2026-11-23 14:00:00+00:00"
         },
-        "closed": 17,
+        "closed": 18,
         "qualified": "2026-11-15 14:45:00+00:00",
         "validation": {
-          "balance": 198.27538551310982,
-          "equity": 198.27538551310982,
+          "balance": 196.78978370707526,
+          "equity": 196.78978370707526,
           "peak": 200.5780542869084,
           "day_start": 200,
           "day": "2026-11-23",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-23 13:45:00+00:00"
+          "cursor": "2026-11-23 14:00:00+00:00"
         },
-        "validation_closed": 3
+        "validation_closed": 4
       },
       "relative_strength": {
         "account": {
@@ -336,8 +336,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 3,
-    "minute": "2026-11-23 14:22:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-23 14:23:00+00:00",
     "finalists": [
       "trend",
       "reversion",
