@@ -1,6 +1,6 @@
 {
   "balance": 190.7344174823305,
-  "equity": 190.47222797029633,
+  "equity": 190.48503297029632,
   "peak": 201.353627874134,
   "day_start": 191.65102026420823,
   "day": "2026-11-23",
@@ -17,7 +17,7 @@
       "strategy": "trend"
     }
   },
-  "cursor": "2026-11-23 12:00:00+00:00",
+  "cursor": "2026-11-23 12:15:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -354,49 +354,31 @@
       },
       "grok_stochastic": {
         "account": {
-          "balance": 199.98929787731794,
-          "equity": 199.61328386907846,
+          "balance": 199.46381700337147,
+          "equity": 199.46381700337147,
           "peak": 200.82047112364907,
           "day_start": 200.64203050783394,
           "day": "2026-11-23",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 61361.002779999995,
-              "qty": 0.00305,
-              "stop": 60949.82649348281,
-              "target": 62649.52681136566,
-              "capital": 187.151058479,
-              "opened": "2026-11-23 11:30:00+00:00"
-            }
-          },
-          "cursor": "2026-11-23 12:00:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-23 12:15:00+00:00"
         },
-        "closed": 6,
+        "closed": 7,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-22 17:00:00+00:00",
         "validation": {
-          "balance": 199.3494800224688,
-          "equity": 198.97469884704324,
+          "balance": 198.82572203663364,
+          "equity": 198.82572203663364,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-23",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 61361.002779999995,
-              "qty": 0.00304,
-              "stop": 60949.82649348281,
-              "target": 62649.52681136566,
-              "capital": 186.5374484512,
-              "opened": "2026-11-23 11:30:00+00:00"
-            }
-          },
-          "cursor": "2026-11-23 12:00:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-23 12:15:00+00:00"
         },
-        "validation_closed": 1
+        "validation_closed": 2
       },
       "grok_confluence": {
         "account": {
@@ -427,8 +409,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 10,
-    "minute": "2026-11-23 12:29:00+00:00",
+    "turn": 11,
+    "minute": "2026-11-23 12:30:00+00:00",
     "finalists": [
       "trend",
       "reversion",
