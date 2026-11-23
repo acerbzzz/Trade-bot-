@@ -2,7 +2,7 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-23 17:30 UTC**.
+Latest completed candle ended **2026-11-23 17:45 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
@@ -10,8 +10,8 @@ Latest completed candle ended **2026-11-23 17:30 UTC**.
 
 | Market | Last close | Trend | Mean reversion | Breakout | Momentum |
 |---|---:|---|---|---|---|
-| BTC/USD | $61,690.70 | Waiting | Waiting | Waiting | Waiting |
-| ETH/USD | $1,755.36 | Waiting | Waiting | Waiting | Waiting |
+| BTC/USD | $61,354.50 | Waiting | Waiting | Waiting | Waiting |
+| ETH/USD | $1,735.00 | Waiting | Waiting | Waiting | Waiting |
 
 ## Strategy trials
 
@@ -40,7 +40,7 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-23 17:44 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-23 17:45 UTC** · Target interval: 1 minute.
 Worker started: **2026-11-23 17:34 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/45229131990) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/7c377ead419cd861d13c7a9a858b2c1ff3bd57c1)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
