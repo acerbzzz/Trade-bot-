@@ -223,26 +223,17 @@
       },
       "grok_pullback": {
         "account": {
-          "balance": 189.13476720281983,
-          "equity": 188.23967282936545,
+          "balance": 188.18041106791284,
+          "equity": 188.18041106791284,
           "peak": 200,
           "day_start": 191.5797345884679,
           "day": "2026-11-23",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 62857.25152,
-              "qty": 0.00119,
-              "stop": 61751.676576457765,
-              "target": 65887.61307182569,
-              "capital": 74.80012930880001,
-              "opened": "2026-11-23 16:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-23 16:30:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-23 16:45:00+00:00"
         },
-        "closed": 19,
+        "closed": 20,
         "start": "2026-11-14 14:45:00+00:00"
       },
       "grok_squeeze": {
@@ -345,8 +336,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 7,
-    "minute": "2026-11-23 17:03:00+00:00",
+    "turn": 8,
+    "minute": "2026-11-23 17:04:00+00:00",
     "finalists": [
       "trend",
       "reversion",
