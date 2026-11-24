@@ -100,7 +100,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 01:30:00+00:00"
+          "cursor": "2026-11-24 01:45:00+00:00"
         },
         "closed": 18,
         "qualified": "2026-11-17 11:45:00+00:00",
@@ -113,7 +113,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 01:30:00+00:00"
+          "cursor": "2026-11-24 01:45:00+00:00"
         },
         "validation_closed": 0
       },
@@ -354,8 +354,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 1,
-    "minute": "2026-11-24 02:09:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-24 02:10:00+00:00",
     "finalists": [
       "trend",
       "reversion",
