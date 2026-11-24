@@ -32,7 +32,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | grok_stochastic | 8 | $-1.17 | Yes | $-1.81 |
 | grok_confluence | 9 | $+2.86 | Yes | $-2.05 |
 
-Relative strength trial equity: $194.56. 50/50 BTC–ETH buy-and-hold liquidation value: $185.67.
+Relative strength trial equity: $194.61. 50/50 BTC–ETH buy-and-hold liquidation value: $185.76.
 
 Validation leader: grok_supertrend
 
@@ -40,7 +40,7 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-24 01:36 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-24 01:37 UTC** · Target interval: 1 minute.
 Worker started: **2026-11-24 01:04 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/45302212529) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/ef601140849274d40bf80623b0cf98f54fa76fd3)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
