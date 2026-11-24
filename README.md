@@ -2,7 +2,7 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-24 14:00 UTC**.
+Latest completed candle ended **2026-11-24 17:45 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
@@ -10,8 +10,8 @@ Latest completed candle ended **2026-11-24 14:00 UTC**.
 
 | Market | Last close | Trend | Mean reversion | Breakout | Momentum |
 |---|---:|---|---|---|---|
-| BTC/USD | $59,938.10 | Waiting | Waiting | Waiting | Waiting |
-| ETH/USD | $1,687.59 | Waiting | Waiting | Waiting | Waiting |
+| BTC/USD | $59,980.30 | Waiting | Waiting | Waiting | Waiting |
+| ETH/USD | $1,681.71 | Waiting | Waiting | Waiting | Waiting |
 
 ## Strategy trials
 
@@ -32,7 +32,7 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 | grok_stochastic | 8 | $-1.17 | Yes | $-1.81 |
 | grok_confluence | 10 | $+1.35 | Yes | $-2.05 |
 
-Relative strength trial equity: $192.67. 50/50 BTC–ETH buy-and-hold liquidation value: $181.81.
+Relative strength trial equity: $192.67. 50/50 BTC–ETH buy-and-hold liquidation value: $181.56.
 
 Validation leader: grok_supertrend
 
@@ -40,7 +40,7 @@ Started with $200 simulated USD. Entries and exits are modeled from candles. No 
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-24 14:12 UTC** · Target interval: 1 minute.
-Worker started: **2026-11-24 13:04 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/45399678474) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/5f0f38265b2394b60bd248da5385f83123e03617)
+Last successful market check: **2026-11-24 17:51 UTC** · Target interval: 1 minute.
+Worker started: **2026-11-24 17:51 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/45453067982) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/f3a866b460445bfec135b850d8f349707925b7ca)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
