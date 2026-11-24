@@ -329,35 +329,35 @@
       },
       "grok_confluence": {
         "account": {
-          "balance": 201.34632977419756,
-          "equity": 201.34632977419756,
+          "balance": 200.16614318095696,
+          "equity": 200.16614318095696,
           "peak": 205.561369035196,
           "day_start": 202.86470397765115,
           "day": "2026-11-24",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 13:45:00+00:00"
+          "cursor": "2026-11-24 17:30:00+00:00"
         },
-        "closed": 10,
+        "closed": 11,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-21 13:30:00+00:00",
         "validation": {
-          "balance": 198.50076496717818,
-          "equity": 198.50076496717818,
+          "balance": 197.3384599889867,
+          "equity": 197.3384599889867,
           "peak": 200.1410208377085,
           "day_start": 200,
           "day": "2026-11-24",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 13:45:00+00:00"
+          "cursor": "2026-11-24 17:30:00+00:00"
         },
-        "validation_closed": 1
+        "validation_closed": 2
       }
     },
-    "turn": 11,
-    "minute": "2026-11-24 17:57:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-24 17:58:00+00:00",
     "finalists": [
       "trend",
       "reversion",
