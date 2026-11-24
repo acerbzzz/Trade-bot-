@@ -65,30 +65,30 @@
     "cards": {
       "trend": {
         "account": {
-          "balance": 198.39866873024548,
-          "equity": 198.39866873024548,
+          "balance": 196.91114304405735,
+          "equity": 196.91114304405735,
           "peak": 201.050068030383,
           "day_start": 199.89680904647895,
           "day": "2026-11-24",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 13:45:00+00:00"
+          "cursor": "2026-11-24 17:30:00+00:00"
         },
-        "closed": 11,
+        "closed": 12,
         "qualified": "2026-11-22 12:15:00+00:00",
         "validation": {
-          "balance": 198.50185968376653,
-          "equity": 198.50185968376653,
+          "balance": 197.0143339975784,
+          "equity": 197.0143339975784,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-24",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 13:45:00+00:00"
+          "cursor": "2026-11-24 17:30:00+00:00"
         },
-        "validation_closed": 1
+        "validation_closed": 2
       },
       "reversion": {
         "account": {
@@ -356,8 +356,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 0,
-    "minute": "2026-11-24 17:58:00+00:00",
+    "turn": 1,
+    "minute": "2026-11-24 17:59:00+00:00",
     "finalists": [
       "trend",
       "reversion",
