@@ -356,53 +356,35 @@
       },
       "grok_confluence": {
         "account": {
-          "balance": 202.86470397765115,
-          "equity": 202.81474508137296,
+          "balance": 201.34632977419756,
+          "equity": 201.34632977419756,
           "peak": 205.561369035196,
           "day_start": 202.86470397765115,
           "day": "2026-11-24",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 60370.70578,
-              "qty": 0.00238,
-              "stop": 59810.758413614865,
-              "target": 62026.83543658893,
-              "capital": 143.6822797564,
-              "opened": "2026-11-24 12:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-24 12:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-24 13:00:00+00:00"
         },
-        "closed": 9,
+        "closed": 10,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-21 13:30:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 199.95067083770851,
+          "balance": 198.50076496717818,
+          "equity": 198.50076496717818,
           "peak": 200.1410208377085,
           "day_start": 200,
           "day": "2026-11-24",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 60370.70578,
-              "qty": 0.00235,
-              "stop": 59810.758413614865,
-              "target": 62026.83543658893,
-              "capital": 141.871158583,
-              "opened": "2026-11-24 12:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-24 12:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-24 13:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       }
     },
-    "turn": 11,
-    "minute": "2026-11-24 13:19:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-24 13:20:00+00:00",
     "finalists": [
       "trend",
       "reversion",
