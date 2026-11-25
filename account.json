@@ -309,11 +309,11 @@
           "equity": 198.8290322470027,
           "peak": 200.82047112364907,
           "day_start": 198.8290322470027,
-          "day": "2026-11-24",
+          "day": "2026-11-25",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 23:30:00+00:00"
+          "cursor": "2026-11-25 01:30:00+00:00"
         },
         "closed": 8,
         "start": "2026-11-14 14:45:00+00:00",
@@ -323,13 +323,14 @@
           "equity": 200,
           "peak": 200,
           "day_start": 200,
-          "day": "2026-11-24",
+          "day": "2026-11-25",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 23:30:00+00:00"
+          "cursor": "2026-11-25 01:30:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 0,
+        "validation_pnl": 0
       },
       "grok_confluence": {
         "account": {
@@ -360,8 +361,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 10,
-    "minute": "2026-11-25 01:46:00+00:00",
+    "turn": 11,
+    "minute": "2026-11-25 01:47:00+00:00",
     "finalists": [
       "trend",
       "reversion",
