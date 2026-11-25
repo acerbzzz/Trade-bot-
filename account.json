@@ -124,11 +124,11 @@
           "equity": 192.6006047013819,
           "peak": 201.33761138322504,
           "day_start": 192.6006047013819,
-          "day": "2026-11-24",
+          "day": "2026-11-25",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 23:30:00+00:00"
+          "cursor": "2026-11-25 01:15:00+00:00"
         },
         "closed": 16
       },
@@ -357,8 +357,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 2,
-    "minute": "2026-11-25 01:38:00+00:00",
+    "turn": 3,
+    "minute": "2026-11-25 01:39:00+00:00",
     "finalists": [
       "trend",
       "reversion",
