@@ -2,12 +2,12 @@
   "balance": 186.39299836140918,
   "equity": 186.39299836140918,
   "peak": 201.353627874134,
-  "day_start": 187.3548429192686,
-  "day": "2026-11-24",
+  "day_start": 186.39299836140918,
+  "day": "2026-11-25",
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-24 23:30:00+00:00",
+  "cursor": "2026-11-25 01:15:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -95,12 +95,12 @@
           "balance": 195.8385460070875,
           "equity": 195.8385460070875,
           "peak": 201.49182356990815,
-          "day_start": 195.38006387795147,
-          "day": "2026-11-24",
+          "day_start": 195.8385460070875,
+          "day": "2026-11-25",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 23:30:00+00:00"
+          "cursor": "2026-11-25 01:15:00+00:00"
         },
         "closed": 20,
         "qualified": "2026-11-17 11:45:00+00:00",
@@ -108,14 +108,15 @@
           "balance": 200.46328879477863,
           "equity": 200.46328879477863,
           "peak": 200.55692641443238,
-          "day_start": 200,
-          "day": "2026-11-24",
+          "day_start": 200.46328879477863,
+          "day": "2026-11-25",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-24 23:30:00+00:00"
+          "cursor": "2026-11-25 01:15:00+00:00"
         },
-        "validation_closed": 2
+        "validation_closed": 2,
+        "validation_pnl": 0.4632887947786344
       },
       "breakout": {
         "account": {
@@ -356,8 +357,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 1,
-    "minute": "2026-11-24 23:59:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-25 01:38:00+00:00",
     "finalists": [
       "trend",
       "reversion",
