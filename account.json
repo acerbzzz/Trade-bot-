@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-25 21:45:00+00:00",
+  "cursor": "2026-11-25 22:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -242,7 +242,7 @@
       "grok_pullback": {
         "account": {
           "balance": 187.07771147321833,
-          "equity": 187.17037375581583,
+          "equity": 187.02757375581584,
           "peak": 200,
           "day_start": 187.07771147321833,
           "day": "2026-11-25",
@@ -258,7 +258,7 @@
               "opened": "2026-11-25 20:45:00+00:00"
             }
           },
-          "cursor": "2026-11-25 21:45:00+00:00"
+          "cursor": "2026-11-25 22:00:00+00:00"
         },
         "closed": 21,
         "start": "2026-11-14 14:45:00+00:00"
@@ -399,8 +399,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 7,
-    "minute": "2026-11-25 22:14:00+00:00",
+    "turn": 8,
+    "minute": "2026-11-25 22:15:00+00:00",
     "finalists": [
       "trend",
       "reversion",
