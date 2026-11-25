@@ -182,18 +182,50 @@
       "failed_breakdown": {
         "account": {
           "balance": 190.40397215318245,
-          "equity": 190.40397215318245,
+          "equity": 190.07719646912807,
           "peak": 205.42147379665846,
           "day_start": 191.65280405355753,
           "day": "2026-11-25",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-25 01:45:00+00:00"
+          "positions": {
+            "BTC/USD": {
+              "entry": 59208.157119999996,
+              "qty": 0.0027400000000000002,
+              "stop": 58764.624581258824,
+              "target": 60568.39415131688,
+              "capital": 162.2303505088,
+              "opened": "2026-11-25 02:00:00+00:00",
+              "reclaimed_low": 59147.2
+            }
+          },
+          "cursor": "2026-11-25 02:00:00+00:00"
         },
         "closed": 24,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-17 00:30:00+00:00"
+        "qualified": "2026-11-17 00:30:00+00:00",
+        "validation": {
+          "balance": 200,
+          "equity": 199.6565277481472,
+          "peak": 200,
+          "day_start": 200,
+          "day": "2026-11-25",
+          "halted": false,
+          "day_halt": false,
+          "positions": {
+            "BTC/USD": {
+              "entry": 59208.157119999996,
+              "qty": 0.00288,
+              "stop": 58764.624581258824,
+              "target": 60568.39415131688,
+              "capital": 170.5194925056,
+              "opened": "2026-11-25 02:00:00+00:00",
+              "reclaimed_low": 59147.2
+            }
+          },
+          "cursor": "2026-11-25 02:00:00+00:00"
+        },
+        "validation_closed": 0
       },
       "grok_pullback": {
         "account": {
@@ -274,8 +306,8 @@
         "qualified": "2026-11-21 13:30:00+00:00"
       }
     },
-    "turn": 6,
-    "minute": "2026-11-25 02:18:00+00:00",
+    "turn": 7,
+    "minute": "2026-11-25 02:19:00+00:00",
     "finalists": [
       "trend",
       "reversion",
