@@ -2,7 +2,7 @@
 
 **Monitoring** · Kraken spot · 15-minute candles
 
-Latest completed candle ended **2026-11-25 01:45 UTC**.
+Latest completed candle ended **2026-11-25 02:00 UTC**.
 
 | Paper equity | Open positions | Closed trades |
 |---:|---:|---:|
@@ -10,8 +10,8 @@ Latest completed candle ended **2026-11-25 01:45 UTC**.
 
 | Market | Last close | Trend | Mean reversion | Breakout | Momentum |
 |---|---:|---|---|---|---|
-| BTC/USD | $59,259.60 | Waiting | Waiting | Waiting | Waiting |
-| ETH/USD | $1,659.66 | Waiting | Waiting | Waiting | Waiting |
+| BTC/USD | $59,190.40 | Waiting | Waiting | Waiting | Waiting |
+| ETH/USD | $1,655.87 | Waiting | Entry signal | Waiting | Waiting |
 
 ## Strategy trials
 
@@ -19,28 +19,28 @@ One independent paper trial per worker minute. Net P&L includes modeled costs.
 
 | Strategy | Closed | Realized P&L | Shortlisted | Next-day validation P&L |
 |---|---:|---:|---|---:|
-| trend | 12 | $-3.09 | Yes | $-0.57 |
-| reversion | 20 | $-4.16 | Yes | $+0.00 |
+| trend | 12 | $-3.09 | Yes | $-2.99 |
+| reversion | 20 | $-4.16 | Yes | $+0.46 |
 | breakout | 16 | $-7.40 | Pending | — |
-| momentum | 19 | $-9.68 | Yes | $-3.21 |
+| momentum | 19 | $-9.68 | Yes | $-1.50 |
 | relative_strength | 5 | $-7.33 | Pending | — |
 | vwap_pullback | 31 | $-10.53 | Pending | — |
-| failed_breakdown | 23 | $-8.16 | Yes | $+0.00 |
+| failed_breakdown | 23 | $-8.16 | Yes | $-4.65 |
 | grok_pullback | 21 | $-12.92 | Pending | — |
 | grok_squeeze | 10 | $-7.41 | Pending | — |
-| grok_supertrend | 12 | $-0.33 | Yes | $+3.73 |
-| grok_stochastic | 8 | $-1.17 | Yes | $-1.81 |
-| grok_confluence | 11 | $+0.17 | Yes | $-2.05 |
+| grok_supertrend | 12 | $-0.33 | Yes | $-1.50 |
+| grok_stochastic | 8 | $-1.17 | Yes | $+0.00 |
+| grok_confluence | 11 | $+0.17 | Yes | $-2.66 |
 
 Relative strength trial equity: $192.67. 50/50 BTC–ETH buy-and-hold liquidation value: $179.28.
 
-Validation leader: grok_supertrend
+Validation leader: reversion
 
 Started with $200 simulated USD. Entries and exits are modeled from candles. No broker orders.
 
 [Refresh history](https://github.com/acerbzzz/Trade-bot-/actions/workflows/forward-paper.yml)
 
-Last successful market check: **2026-11-25 01:59 UTC** · Target interval: 1 minute.
+Last successful market check: **2026-11-25 02:00 UTC** · Target interval: 1 minute.
 Worker started: **2026-11-25 01:38 UTC** · [Worker run](https://github.com/acerbzzz/Trade-bot-/actions/runs/45527236231) · [Restored checkpoint](https://github.com/acerbzzz/Trade-bot-/commit/2102edeeb36b13ab3af04243f70b44d8c2e17f5f)
 
 [Open phone dashboard](https://ryans-paper-desk.enchantingchili2.chatgpt.site)
