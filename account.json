@@ -1,23 +1,13 @@
 {
-  "balance": 185.22745150592525,
-  "equity": 184.83932861288363,
+  "balance": 184.07137858182924,
+  "equity": 184.07137858182924,
   "peak": 201.353627874134,
   "day_start": 187.23644297914058,
   "day": "2026-11-26",
   "halted": false,
   "day_halt": false,
-  "positions": {
-    "BTC/USD": {
-      "entry": 60846.84858,
-      "qty": 0.00304,
-      "stop": 60545.41210607883,
-      "target": 61858.91932916511,
-      "capital": 184.9744196832,
-      "opened": "2026-11-26 21:30:00+00:00",
-      "strategy": "breakout"
-    }
-  },
-  "cursor": "2026-11-26 21:45:00+00:00",
+  "positions": {},
+  "cursor": "2026-11-26 22:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -65,7 +55,7 @@
     "BTC/USD": false,
     "ETH/USD": false
   },
-  "closed": 46,
+  "closed": 47,
   "strategy_signals": {
     "BTC/USD": [],
     "ETH/USD": []
@@ -268,7 +258,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-26 21:45:00+00:00"
+          "cursor": "2026-11-26 22:00:00+00:00"
         },
         "closed": 24,
         "start": "2026-11-14 14:45:00+00:00"
@@ -409,8 +399,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 7,
-    "minute": "2026-11-26 22:14:00+00:00",
+    "turn": 8,
+    "minute": "2026-11-26 22:15:00+00:00",
     "finalists": [
       "trend",
       "reversion",
