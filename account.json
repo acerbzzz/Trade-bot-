@@ -308,49 +308,31 @@
       },
       "grok_stochastic": {
         "account": {
-          "balance": 198.8290322470027,
-          "equity": 198.39380553509827,
+          "balance": 198.3211764942399,
+          "equity": 198.3211764942399,
           "peak": 200.82047112364907,
           "day_start": 198.8290322470027,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1696.268728,
-              "qty": 0.08710000000000001,
-              "stop": 1681.340995182726,
-              "target": 1740.7889762928237,
-              "capital": 147.74500620880002,
-              "opened": "2026-11-26 04:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 05:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 06:00:00+00:00"
         },
-        "closed": 8,
+        "closed": 9,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-22 17:00:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 199.5622748569136,
+          "balance": 199.4892288870032,
+          "equity": 199.4892288870032,
           "peak": 200.4452828569136,
           "day_start": 200,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1696.268728,
-              "qty": 0.0876,
-              "stop": 1681.340995182726,
-              "target": 1740.7889762928237,
-              "capital": 148.5931405728,
-              "opened": "2026-11-26 04:00:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 05:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 06:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "grok_confluence": {
         "account": {
@@ -381,8 +363,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 10,
-    "minute": "2026-11-26 06:17:00+00:00",
+    "turn": 11,
+    "minute": "2026-11-26 06:18:00+00:00",
     "finalists": [
       "trend",
       "reversion",
