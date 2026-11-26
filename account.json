@@ -292,7 +292,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-26 09:00:00+00:00"
+          "cursor": "2026-11-26 09:15:00+00:00"
         },
         "closed": 11,
         "start": "2026-11-14 14:45:00+00:00"
@@ -391,8 +391,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 8,
-    "minute": "2026-11-26 09:39:00+00:00",
+    "turn": 9,
+    "minute": "2026-11-26 09:40:00+00:00",
     "finalists": [
       "trend",
       "reversion",
