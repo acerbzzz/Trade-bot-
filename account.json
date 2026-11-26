@@ -7,7 +7,7 @@
   "halted": false,
   "day_halt": false,
   "positions": {},
-  "cursor": "2026-11-26 05:45:00+00:00",
+  "cursor": "2026-11-26 06:00:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -241,26 +241,17 @@
       },
       "grok_pullback": {
         "account": {
-          "balance": 187.07771147321833,
-          "equity": 187.59404875581583,
+          "balance": 187.55027120535584,
+          "equity": 187.55027120535584,
           "peak": 200,
           "day_start": 187.51319875581584,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1681.444282,
-              "qty": 0.052500000000000005,
-              "stop": 1656.9336085314173,
-              "target": 1749.8516648643483,
-              "capital": 88.275824805,
-              "opened": "2026-11-25 20:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 05:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 06:00:00+00:00"
         },
-        "closed": 21,
+        "closed": 22,
         "start": "2026-11-14 14:45:00+00:00"
       },
       "grok_squeeze": {
@@ -399,8 +390,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 7,
-    "minute": "2026-11-26 06:14:00+00:00",
+    "turn": 8,
+    "minute": "2026-11-26 06:15:00+00:00",
     "finalists": [
       "trend",
       "reversion",
