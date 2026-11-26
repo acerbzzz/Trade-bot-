@@ -137,48 +137,30 @@
       },
       "momentum": {
         "account": {
-          "balance": 190.31649091678986,
-          "equity": 189.32140416609636,
+          "balance": 189.2223059065046,
+          "equity": 189.2223059065046,
           "peak": 201.05397359135006,
           "day_start": 190.31649091678986,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 60892.06214,
-              "qty": 0.00205,
-              "stop": 60277.18378596199,
-              "target": 62687.69474484043,
-              "capital": 124.82872738700001,
-              "opened": "2026-11-26 00:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 00:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 01:00:00+00:00"
         },
-        "closed": 19,
+        "closed": 20,
         "qualified": "2026-11-15 14:45:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 198.95151835048878,
+          "balance": 198.84710262330918,
+          "equity": 198.84710262330918,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 60892.06214,
-              "qty": 0.00216,
-              "stop": 60277.18378596199,
-              "target": 62687.69474484043,
-              "capital": 131.5268542224,
-              "opened": "2026-11-26 00:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 00:45:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 01:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "relative_strength": {
         "account": {
@@ -403,8 +385,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 3,
-    "minute": "2026-11-26 01:22:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-26 01:23:00+00:00",
     "finalists": [
       "trend",
       "reversion",
