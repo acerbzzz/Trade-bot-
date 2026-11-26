@@ -345,53 +345,35 @@
       },
       "grok_confluence": {
         "account": {
-          "balance": 201.39056401370058,
-          "equity": 200.46126357918703,
+          "balance": 200.3113604600929,
+          "equity": 200.3113604600929,
           "peak": 205.561369035196,
           "day_start": 201.7080427691892,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1706.701857,
-              "qty": 0.11030000000000001,
-              "stop": 1695.217598877416,
-              "target": 1742.6603602274781,
-              "capital": 188.24921482710002,
-              "opened": "2026-11-26 12:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 14:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 14:30:00+00:00"
         },
-        "closed": 13,
+        "closed": 14,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-21 13:30:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 199.07743973182926,
+          "balance": 198.92862385203952,
+          "equity": 198.92862385203952,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1706.701857,
-              "qty": 0.1095,
-              "stop": 1695.217598877416,
-              "target": 1742.6603602274781,
-              "capital": 186.88385334150001,
-              "opened": "2026-11-26 12:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 14:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 14:30:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       }
     },
-    "turn": 11,
-    "minute": "2026-11-26 14:54:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-26 14:55:00+00:00",
     "finalists": [
       "trend",
       "reversion",
