@@ -1,23 +1,13 @@
 {
-  "balance": 183.65968946912975,
-  "equity": 185.33942125600575,
+  "balance": 185.22745150592525,
+  "equity": 185.22745150592525,
   "peak": 201.353627874134,
   "day_start": 187.23644297914058,
   "day": "2026-11-26",
   "halted": false,
   "day_halt": false,
-  "positions": {
-    "ETH/USD": {
-      "entry": 1678.023256,
-      "qty": 0.083,
-      "stop": 1663.6001473589636,
-      "target": 1721.2047471188125,
-      "capital": 139.275930248,
-      "opened": "2026-11-26 15:15:00+00:00",
-      "strategy": "reversion"
-    }
-  },
-  "cursor": "2026-11-26 18:15:00+00:00",
+  "positions": {},
+  "cursor": "2026-11-26 18:30:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -65,7 +55,7 @@
     "BTC/USD": false,
     "ETH/USD": false
   },
-  "closed": 45,
+  "closed": 46,
   "strategy_signals": {
     "BTC/USD": [],
     "ETH/USD": []
@@ -102,48 +92,30 @@
       },
       "reversion": {
         "account": {
-          "balance": 196.86965985366345,
-          "equity": 198.66879426153426,
+          "balance": 198.54886521596612,
+          "equity": 198.54886521596612,
           "peak": 201.49182356990815,
           "day_start": 196.86965985366345,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1678.023256,
-              "qty": 0.0889,
-              "stop": 1663.6001473589636,
-              "target": 1721.2047471188125,
-              "capital": 149.17626745840002,
-              "opened": "2026-11-26 15:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 18:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 18:30:00+00:00"
         },
-        "closed": 24,
+        "closed": 25,
         "qualified": "2026-11-17 11:45:00+00:00",
         "validation": {
-          "balance": 200,
-          "equity": 201.8294910064288,
-          "peak": 201.8294910064288,
+          "balance": 201.7075384111604,
+          "equity": 201.7075384111604,
+          "peak": 201.8303950064288,
           "day_start": 200,
           "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "ETH/USD": {
-              "entry": 1678.023256,
-              "qty": 0.09040000000000001,
-              "stop": 1663.6001473589636,
-              "target": 1721.2047471188125,
-              "capital": 151.69330234240002,
-              "opened": "2026-11-26 15:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 18:15:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-26 18:30:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 1
       },
       "breakout": {
         "account": {
@@ -373,8 +345,8 @@
         "validation_closed": 1
       }
     },
-    "turn": 1,
-    "minute": "2026-11-26 18:44:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-26 18:45:00+00:00",
     "finalists": [
       "trend",
       "reversion",
