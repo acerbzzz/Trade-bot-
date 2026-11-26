@@ -76,20 +76,7 @@
           "cursor": "2026-11-26 01:45:00+00:00"
         },
         "closed": 12,
-        "qualified": "2026-11-22 12:15:00+00:00",
-        "validation": {
-          "balance": 200,
-          "equity": 200,
-          "peak": 200,
-          "day_start": 200,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-26 01:45:00+00:00"
-        },
-        "validation_closed": 0,
-        "validation_pnl": 0
+        "qualified": "2026-11-22 12:15:00+00:00"
       },
       "reversion": {
         "account": {
@@ -104,20 +91,7 @@
           "cursor": "2026-11-26 01:45:00+00:00"
         },
         "closed": 24,
-        "qualified": "2026-11-17 11:45:00+00:00",
-        "validation": {
-          "balance": 201.05018544576163,
-          "equity": 201.05018544576163,
-          "peak": 201.1443491507559,
-          "day_start": 201.05018544576163,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-26 01:45:00+00:00"
-        },
-        "validation_closed": 4,
-        "validation_pnl": 1.0501854457616275
+        "qualified": "2026-11-17 11:45:00+00:00"
       },
       "breakout": {
         "account": {
@@ -146,20 +120,7 @@
           "cursor": "2026-11-26 01:45:00+00:00"
         },
         "closed": 21,
-        "qualified": "2026-11-15 14:45:00+00:00",
-        "validation": {
-          "balance": 198.63581399369718,
-          "equity": 198.63581399369718,
-          "peak": 200,
-          "day_start": 200,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-26 01:45:00+00:00"
-        },
-        "validation_closed": 2,
-        "validation_pnl": -1.3641860063028162
+        "qualified": "2026-11-15 14:45:00+00:00"
       },
       "relative_strength": {
         "account": {
@@ -219,20 +180,7 @@
         },
         "closed": 29,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-17 00:30:00+00:00",
-        "validation": {
-          "balance": 200.79029845834606,
-          "equity": 200.79029845834606,
-          "peak": 200.79029845834606,
-          "day_start": 200.79029845834606,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-26 01:45:00+00:00"
-        },
-        "validation_closed": 5,
-        "validation_pnl": 0.7902984583460579
+        "qualified": "2026-11-17 00:30:00+00:00"
       },
       "grok_pullback": {
         "account": {
@@ -305,29 +253,7 @@
         },
         "closed": 12,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-15 18:15:00+00:00",
-        "validation": {
-          "balance": 200,
-          "equity": 202.06650958823226,
-          "peak": 202.22391958823226,
-          "day_start": 201.54189958823224,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 59196.853729999995,
-              "qty": 0.00135,
-              "stop": 58166.62565898255,
-              "target": 62023.34151116002,
-              "capital": 79.9157525355,
-              "opened": "2026-11-25 17:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 02:00:00+00:00"
-        },
-        "validation_closed": 0,
-        "validation_pnl": 2.10511958823227
+        "qualified": "2026-11-15 18:15:00+00:00"
       },
       "grok_stochastic": {
         "account": {
@@ -343,25 +269,12 @@
         },
         "closed": 8,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-22 17:00:00+00:00",
-        "validation": {
-          "balance": 200,
-          "equity": 200,
-          "peak": 200,
-          "day_start": 200,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-26 02:00:00+00:00"
-        },
-        "validation_closed": 0,
-        "validation_pnl": 0
+        "qualified": "2026-11-22 17:00:00+00:00"
       },
       "grok_confluence": {
         "account": {
           "balance": 201.73525793970197,
-          "equity": 201.80467574212278,
+          "equity": 201.74633174212278,
           "peak": 205.561369035196,
           "day_start": 201.7080427691892,
           "day": "2026-11-26",
@@ -377,37 +290,15 @@
               "opened": "2026-11-26 01:15:00+00:00"
             }
           },
-          "cursor": "2026-11-26 01:45:00+00:00"
+          "cursor": "2026-11-26 02:00:00+00:00"
         },
         "closed": 12,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-21 13:30:00+00:00",
-        "validation": {
-          "balance": 201.569114758745,
-          "equity": 201.63853256116582,
-          "peak": 202.22391958823226,
-          "day_start": 201.54189958823224,
-          "day": "2026-11-26",
-          "halted": false,
-          "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 60721.410959999994,
-              "qty": 0.00204,
-              "stop": 60060.54495443773,
-              "target": 62631.25263660846,
-              "capital": 123.87167835839999,
-              "opened": "2026-11-26 01:15:00+00:00"
-            }
-          },
-          "cursor": "2026-11-26 01:45:00+00:00"
-        },
-        "validation_closed": 1,
-        "validation_pnl": 1.6385325611658175
+        "qualified": "2026-11-21 13:30:00+00:00"
       }
     },
-    "turn": 11,
-    "minute": "2026-11-26 02:18:00+00:00",
+    "turn": 0,
+    "minute": "2026-11-26 02:19:00+00:00",
     "finalists": [
       "trend",
       "reversion",
@@ -417,15 +308,15 @@
       "grok_stochastic",
       "grok_confluence"
     ],
-    "validation_start": "2026-11-25 01:45:00+00:00",
+    "validation_start": "2026-11-26 02:00:00+00:00",
     "last_result": {
-      "trend": -2.9856660024215955,
-      "reversion": 0.4632887947786344,
-      "momentum": -1.4992350328218151,
-      "failed_breakdown": -4.647972435970189,
-      "grok_supertrend": -1.4992350328218151,
+      "trend": 0,
+      "reversion": 1.0501854457616275,
+      "momentum": -1.3641860063028162,
+      "failed_breakdown": 0.7902984583460579,
+      "grok_supertrend": 2.10511958823227,
       "grok_stochastic": 0,
-      "grok_confluence": -2.661540011013301
+      "grok_confluence": 1.6385325611658175
     }
   }
 }
