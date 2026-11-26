@@ -151,11 +151,11 @@
           "equity": 190.31649091678986,
           "peak": 201.05397359135006,
           "day_start": 190.31649091678986,
-          "day": "2026-11-25",
+          "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-25 23:45:00+00:00"
+          "cursor": "2026-11-26 00:00:00+00:00"
         },
         "closed": 19,
         "qualified": "2026-11-15 14:45:00+00:00",
@@ -164,11 +164,11 @@
           "equity": 200,
           "peak": 200,
           "day_start": 200,
-          "day": "2026-11-25",
+          "day": "2026-11-26",
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-25 23:45:00+00:00"
+          "cursor": "2026-11-26 00:00:00+00:00"
         },
         "validation_closed": 0
       },
@@ -404,8 +404,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 3,
-    "minute": "2026-11-26 00:22:00+00:00",
+    "turn": 4,
+    "minute": "2026-11-26 00:23:00+00:00",
     "finalists": [
       "trend",
       "reversion",
