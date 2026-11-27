@@ -226,28 +226,48 @@
       "failed_breakdown": {
         "account": {
           "balance": 189.71274242990657,
-          "equity": 189.71274242990657,
+          "equity": 189.89476925319397,
           "peak": 205.42147379665846,
           "day_start": 191.14617061953732,
           "day": "2026-11-27",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-27 15:00:00+00:00"
+          "positions": {
+            "BTC/USD": {
+              "entry": 59621.48108,
+              "qty": 0.00169,
+              "stop": 58859.12512695496,
+              "target": 61780.29488002459,
+              "capital": 100.7603030252,
+              "opened": "2026-11-27 15:15:00+00:00",
+              "reclaimed_low": 59023.7
+            }
+          },
+          "cursor": "2026-11-27 15:15:00+00:00"
         },
         "closed": 30,
         "start": "2026-11-14 14:45:00+00:00",
         "qualified": "2026-11-17 00:30:00+00:00",
         "validation": {
           "balance": 198.5042488456027,
-          "equity": 198.5042488456027,
+          "equity": 198.6948923232469,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-27",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-27 15:00:00+00:00"
+          "positions": {
+            "BTC/USD": {
+              "entry": 59621.48108,
+              "qty": 0.00177,
+              "stop": 58859.12512695496,
+              "target": 61780.29488002459,
+              "capital": 105.5300215116,
+              "opened": "2026-11-27 15:15:00+00:00",
+              "reclaimed_low": 59023.7
+            }
+          },
+          "cursor": "2026-11-27 15:15:00+00:00"
         },
         "validation_closed": 1
       },
@@ -366,8 +386,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 6,
-    "minute": "2026-11-27 15:37:00+00:00",
+    "turn": 7,
+    "minute": "2026-11-27 15:38:00+00:00",
     "finalists": [
       "trend",
       "reversion",
