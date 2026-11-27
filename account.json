@@ -217,26 +217,17 @@
       },
       "vwap_pullback": {
         "account": {
-          "balance": 185.22555723321904,
-          "equity": 184.96193725973953,
+          "balance": 184.81406024387977,
+          "equity": 184.81406024387977,
           "peak": 201.11243309711082,
           "day_start": 185.22555723321904,
           "day": "2026-11-27",
           "halted": false,
           "day_halt": false,
-          "positions": {
-            "BTC/USD": {
-              "entry": 60672.79638,
-              "qty": 0.00305,
-              "stop": 60362.57018623028,
-              "target": 61706.09480990287,
-              "capital": 185.052028959,
-              "opened": "2026-11-27 00:45:00+00:00"
-            }
-          },
-          "cursor": "2026-11-27 01:30:00+00:00"
+          "positions": {},
+          "cursor": "2026-11-27 01:45:00+00:00"
         },
-        "closed": 40,
+        "closed": 41,
         "start": "2026-11-14 14:45:00+00:00"
       },
       "failed_breakdown": {
@@ -400,8 +391,8 @@
         "validation_closed": 2
       }
     },
-    "turn": 5,
-    "minute": "2026-11-27 02:00:00+00:00",
+    "turn": 6,
+    "minute": "2026-11-27 02:01:00+00:00",
     "finalists": [
       "trend",
       "reversion",
