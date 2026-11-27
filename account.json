@@ -411,8 +411,8 @@
         "validation_pnl": -2.311112244195016
       }
     },
-    "turn": 9,
-    "minute": "2026-11-27 02:28:00+00:00",
+    "turn": 10,
+    "minute": "2026-11-27 02:29:00+00:00",
     "finalists": [
       "trend",
       "reversion",
