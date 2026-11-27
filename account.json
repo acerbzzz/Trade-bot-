@@ -256,7 +256,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-27 01:45:00+00:00"
+          "cursor": "2026-11-27 02:00:00+00:00"
         },
         "closed": 29,
         "start": "2026-11-14 14:45:00+00:00",
@@ -270,9 +270,10 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-27 01:45:00+00:00"
+          "cursor": "2026-11-27 02:00:00+00:00"
         },
-        "validation_closed": 0
+        "validation_closed": 0,
+        "validation_pnl": 0
       },
       "grok_pullback": {
         "account": {
@@ -410,8 +411,8 @@
         "validation_pnl": -2.311112244195016
       }
     },
-    "turn": 6,
-    "minute": "2026-11-27 02:25:00+00:00",
+    "turn": 7,
+    "minute": "2026-11-27 02:26:00+00:00",
     "finalists": [
       "trend",
       "reversion",
