@@ -305,11 +305,23 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-27 02:15:00+00:00"
+          "cursor": "2026-11-27 02:30:00+00:00"
         },
         "closed": 9,
         "start": "2026-11-14 14:45:00+00:00",
-        "qualified": "2026-11-22 17:00:00+00:00"
+        "qualified": "2026-11-22 17:00:00+00:00",
+        "validation": {
+          "balance": 200,
+          "equity": 200,
+          "peak": 200,
+          "day_start": 200,
+          "day": "2026-11-27",
+          "halted": false,
+          "day_halt": false,
+          "positions": {},
+          "cursor": "2026-11-27 02:30:00+00:00"
+        },
+        "validation_closed": 0
       },
       "grok_confluence": {
         "account": {
@@ -337,8 +349,8 @@
         "qualified": "2026-11-21 13:30:00+00:00"
       }
     },
-    "turn": 10,
-    "minute": "2026-11-27 02:53:00+00:00",
+    "turn": 11,
+    "minute": "2026-11-27 02:54:00+00:00",
     "finalists": [
       "trend",
       "reversion",
