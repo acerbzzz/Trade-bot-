@@ -1,6 +1,6 @@
 {
   "balance": 184.75779334471557,
-  "equity": 185.51620329732324,
+  "equity": 185.58945829732323,
   "peak": 201.353627874134,
   "day_start": 187.05288341406956,
   "day": "2026-11-28",
@@ -17,7 +17,7 @@
       "strategy": "reversion"
     }
   },
-  "cursor": "2026-11-28 14:30:00+00:00",
+  "cursor": "2026-11-28 14:45:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -196,7 +196,7 @@
           "halted": false,
           "day_halt": false,
           "positions": {},
-          "cursor": "2026-11-28 14:30:00+00:00"
+          "cursor": "2026-11-28 14:45:00+00:00"
         },
         "closed": 6,
         "start": "2026-11-14 14:45:00+00:00",
@@ -204,7 +204,7 @@
           "BTC/USD": 65860.0,
           "ETH/USD": 1852.51
         },
-        "benchmark_equity": 178.54056462549013
+        "benchmark_equity": 178.5895427528528
       },
       "vwap_pullback": {
         "account": {
@@ -364,8 +364,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 4,
-    "minute": "2026-11-28 14:59:00+00:00",
+    "turn": 5,
+    "minute": "2026-11-28 15:00:00+00:00",
     "finalists": [
       "trend",
       "reversion",
