@@ -1,13 +1,23 @@
 {
   "balance": 185.93771868796844,
-  "equity": 185.93771868796844,
+  "equity": 185.49847222796333,
   "peak": 201.353627874134,
   "day_start": 187.05288341406956,
   "day": "2026-11-28",
   "halted": false,
   "day_halt": false,
-  "positions": {},
-  "cursor": "2026-11-28 10:15:00+00:00",
+  "positions": {
+    "BTC/USD": {
+      "entry": 59299.58454,
+      "qty": 0.0031300000000000004,
+      "stop": 58999.452090908984,
+      "target": 60301.81762387177,
+      "capital": 185.60769961020003,
+      "opened": "2026-11-28 10:30:00+00:00",
+      "strategy": "reversion"
+    }
+  },
+  "cursor": "2026-11-28 10:30:00+00:00",
   "settings": {
     "mode": "paper",
     "strategy": "trend",
@@ -95,27 +105,45 @@
       "reversion": {
         "account": {
           "balance": 198.3696553133385,
-          "equity": 198.3696553133385,
+          "equity": 197.9009386435567,
           "peak": 201.49182356990815,
           "day_start": 198.3696553133385,
           "day": "2026-11-28",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-28 10:15:00+00:00"
+          "positions": {
+            "BTC/USD": {
+              "entry": 59299.58454,
+              "qty": 0.00334,
+              "stop": 58999.452090908984,
+              "target": 60301.81762387177,
+              "capital": 198.06061236360003,
+              "opened": "2026-11-28 10:30:00+00:00"
+            }
+          },
+          "cursor": "2026-11-28 10:30:00+00:00"
         },
         "closed": 27,
         "qualified": "2026-11-17 11:45:00+00:00",
         "validation": {
           "balance": 200,
-          "equity": 200,
+          "equity": 199.5270733002501,
           "peak": 200,
           "day_start": 200,
           "day": "2026-11-28",
           "halted": false,
           "day_halt": false,
-          "positions": {},
-          "cursor": "2026-11-28 10:15:00+00:00"
+          "positions": {
+            "BTC/USD": {
+              "entry": 59299.58454,
+              "qty": 0.00337,
+              "stop": 58999.452090908984,
+              "target": 60301.81762387177,
+              "capital": 199.83959989980002,
+              "opened": "2026-11-28 10:30:00+00:00"
+            }
+          },
+          "cursor": "2026-11-28 10:30:00+00:00"
         },
         "validation_closed": 0
       },
@@ -348,8 +376,8 @@
         "validation_closed": 0
       }
     },
-    "turn": 1,
-    "minute": "2026-11-28 10:44:00+00:00",
+    "turn": 2,
+    "minute": "2026-11-28 10:45:00+00:00",
     "finalists": [
       "trend",
       "reversion",
